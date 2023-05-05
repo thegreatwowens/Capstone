@@ -31,6 +31,7 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        Application.targetFrameRate = 200;
 
         foreach (Sound s in UISounds)
         {
