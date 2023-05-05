@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: KeepCalm
+  m_EditorClassIdentifier: 
+  _title: Keep Calm And Carry On Coding
+  _content: "When your browser displays a webpage on screen it uses 3 different programming
+    languages called HTML, CSS and JavaScript. We call the combination of these three
+    languages \u201Cclient-side web technologies\u201D.  Each of these languages
+    are based on web standards defined by the World Wide Web Consortium W3C. As a
+    consequence these languages are recognised by all the main web-browsers including
+    Google Chrome, Microsoft Edge, Modzilla Firefox, Safari, etc. on various platforms
+    (Windows, MacOs, Linux, Android etc.)"
+  _image: {fileID: 21300000, guid: e41e702d106b96347923ea8f15484c22, type: 3}
+  canvasGroup: {fileID: 0}

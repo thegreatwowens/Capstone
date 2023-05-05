@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: AppleEvolution
+  m_EditorClassIdentifier: 
+  _title: Apple Evolution
+  _content: Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne. The
+    company developed computers featuring innovative graphical user interfaces. The
+    high cost of its products caused problems. Wozniak stepped back from Apple and
+    pursued other ventures, while Jobs resigned and founded NeXT. The company bought
+    NeXT and enticed Jobs back to the company. Jobs guided Apple back to profitability
+    through a number of tactics including introducing the iMac, iPod, iPhone and
+    iPad to critical acclaim. When Jobs resigned in 2011 for health reasons, and
+    died two months later, he was succeeded as CEO by Tim Cook.
+  _image: {fileID: 21300000, guid: 5ea904d2ae595e24b8a9a6bae6843d16, type: 3}
+  canvasGroup: {fileID: 0}

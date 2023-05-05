@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: Space Wars
+  m_EditorClassIdentifier: 
+  _title: Space Wars
+  _content: Space will be the next frontier for cyber attackers. Satellites are vital
+    elements of critical infrastructure. Wealthy and poor countries alike depend
+    on them for communication, for the internet, for environmental monitoring and
+    navigation. And, as the internet of things takes shape, our dependency on them
+    will grow exponentially. On-board computers, designed to allow for remote configurations
+    and upgrades to satellite systems, make them vulnerable to cyberattack. Many
+    satellites are designed to have very long life cycles, so their technology will
+    fall behind, creating serious legacy issues. The pace at which technology evolves
+    will always make it hard, if not impossible, to find a timely response to space
+    cyber-threats.
+  _image: {fileID: 21300000, guid: 260053d699f14fe49a8b2f4afbdb6116, type: 3}
+  canvasGroup: {fileID: 0}

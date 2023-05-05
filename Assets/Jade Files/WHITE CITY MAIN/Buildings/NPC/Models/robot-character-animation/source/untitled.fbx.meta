@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 7779a5c5f880b7b4083be6519d16475b
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: 7584462708609890802
+    second: barriga|barrigaAction
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CABECA
+    second: {fileID: 2100000, guid: efac1feda1cfc6a4f8c7741e0a2f5061, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CABECA 01
+    second: {fileID: 2100000, guid: 529330273a262c44bb60f945847435c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CHIP
+    second: {fileID: 2100000, guid: e990b0029fae6864ebf1501e46890b26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LED
+    second: {fileID: 2100000, guid: 1c1e5dfa8e0920c4bb18b7959751143a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais
+    second: {fileID: 2100000, guid: 4be73bec11a38d04684cc67f19b381b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.001
+    second: {fileID: 2100000, guid: 6daefaf96889d4a4a9342aee7349e240, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.003
+    second: {fileID: 2100000, guid: 769a68dc8c356b84299263fef35027e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.004
+    second: {fileID: 2100000, guid: e000cc71087f66d47b793e2846e35ff9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.005
+    second: {fileID: 2100000, guid: 30000afa704134f43882a8ef02ae7b3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.006
+    second: {fileID: 2100000, guid: 4a0b696bc97d82b47be866b5bec23fe1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.007
+    second: {fileID: 2100000, guid: 88381a2557e8f0a40bab4febb0bd04df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.008
+    second: {fileID: 2100000, guid: c6dd3ba064a4e344bb972a2950ba9942, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.009
+    second: {fileID: 2100000, guid: 477344dbf012ff44b95b94b6d172e381, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.010
+    second: {fileID: 2100000, guid: 9a792e374dc49e24daae3b97c672f329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.012
+    second: {fileID: 2100000, guid: 0ade24cd7c7cd504fb88563e75f259e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.013
+    second: {fileID: 2100000, guid: 31bb4cca2aa947c439baa007a0464b31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.014
+    second: {fileID: 2100000, guid: 4eba3838e721182459c5878381f0c6a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.015
+    second: {fileID: 2100000, guid: 58d601e064fa8f74fa43bb49f3d25a25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.016
+    second: {fileID: 2100000, guid: abdf6c84241cff64eb57248dde0eebc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.017
+    second: {fileID: 2100000, guid: 97d82c6312c4a524c901247b6160213d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.018
+    second: {fileID: 2100000, guid: 5e14189e587c72a438c4286d777f5144, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.019
+    second: {fileID: 2100000, guid: b21a61c5860d0a644afb6d01acc8e440, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.020
+    second: {fileID: 2100000, guid: 04b843a1dd919fc4d8bcbd64f4c2246f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.021
+    second: {fileID: 2100000, guid: 34c2813517f72cd449e5db217cff064d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.022
+    second: {fileID: 2100000, guid: 77a052ee9c6e2ef4aa0dbbafb9c287ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.023
+    second: {fileID: 2100000, guid: 2cba4a023d372ba4798665376a9dd836, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.024
+    second: {fileID: 2100000, guid: 78e4a00247822b84ea41c4150285f69f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.025
+    second: {fileID: 2100000, guid: 462eed2a548dfcd4eb3f84f6c6ccc118, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.026
+    second: {fileID: 2100000, guid: 49ce59d9c8a7c544eb9a977c66a877d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.027
+    second: {fileID: 2100000, guid: d04c7ed7e32822d409ebfeafa716b4df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.028
+    second: {fileID: 2100000, guid: aa3f847e1ac12854daf5f3d05da97189, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.029
+    second: {fileID: 2100000, guid: 42d4397a48337b843b51bd3197460b9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.030
+    second: {fileID: 2100000, guid: b92fe54ecba86624f99c5af0eaacd291, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.031
+    second: {fileID: 2100000, guid: 853766c5fab659949a2279ade6de921c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.032
+    second: {fileID: 2100000, guid: 0dd3163592456d540983a4c981c5b5d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.033
+    second: {fileID: 2100000, guid: c9cd08c19e58fb848bba71dbfeda98f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.034
+    second: {fileID: 2100000, guid: a11f5e3a461c89c469f1b0c3b9087605, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.035
+    second: {fileID: 2100000, guid: f673e8058ac54c148a08aca875f11a19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.036
+    second: {fileID: 2100000, guid: 88ee157e4216f554f9eafad886d01c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.037
+    second: {fileID: 2100000, guid: f999ba20a9e50bc46ac42422a4d6d909, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiais.040
+    second: {fileID: 2100000, guid: 56329b922b360d94db811370a2d12a98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: efb0b7c4b037e614cb3e38b807153520, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: barriga|barrigaAction
+      takeName: barriga|barrigaAction
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 107
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

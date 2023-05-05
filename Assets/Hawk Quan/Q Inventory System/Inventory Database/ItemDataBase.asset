@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106842a334e7fa841bd4ec879c11d506, type: 3}
+  m_Name: ItemDataBase
+  m_EditorClassIdentifier: 
+  itemList:
+  - {fileID: 11400000, guid: b02490634a0291940b04cbe484315e12, type: 2}
+  - {fileID: 11400000, guid: 0868bf063d7326149949ae5532034822, type: 2}
+  - {fileID: 11400000, guid: fdc8025bb30ad9547aaef2f683ef788d, type: 2}
+  - {fileID: 11400000, guid: 7ebda8c0e3dbd7b4290526fb8411b6b1, type: 2}
+  - {fileID: 11400000, guid: 892789c0564746f4fb0806278fbc5c48, type: 2}
+  - {fileID: 11400000, guid: fceb0fd14d8b1034aa196ddd61c02328, type: 2}
+  - {fileID: 11400000, guid: 77a57969403630f49801af42330bb056, type: 2}
+  - {fileID: 11400000, guid: 96c4a440eff637a4b84de5ff3eb89149, type: 2}
+  currencies:
+  - {fileID: 11400000, guid: 5f12ed0a62a332a40a42edbc60709d63, type: 2}
+  attributes:
+  - {fileID: 11400000, guid: 1a99c6dbd6d47724cb26f9e8367eed57, type: 2}
+  - {fileID: 11400000, guid: 9506f62293522914e86e2810e77b5af2, type: 2}
+  - {fileID: 11400000, guid: 9c738345731ce6e469ca2b46017a729f, type: 2}
+  - {fileID: 11400000, guid: 0a8fe2084631a0f4f886843ef4f10086, type: 2}
+  - {fileID: 11400000, guid: f8455567860774548a30b2177bee60c2, type: 2}
+  bluePrints: []
+  categories: []
+  saveData: {fileID: 11400000, guid: 3cd3b6abc368fa34980cfda135d74278, type: 2}

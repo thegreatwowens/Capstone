@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: Byte
+  m_EditorClassIdentifier: 
+  _title: Don't Worry, It Won't Byte
+  _content: Computer skills are necessary for employment in many of today's occupations.
+    Years ago, only occupations such as system analyst, programmer, or data entry
+    supervisor were expected to have computer skills prior to on-the-job training.
+    Today's employer expects candidates to have developed a wide array of computer
+    skills prior to employment. The more computer skills you learn, the more employable
+    you become and the more flexibility you will have in your career planning.
+  _image: {fileID: 21300000, guid: 8d201722de110604bb1b8d1fa24b27a0, type: 3}
+  canvasGroup: {fileID: 0}

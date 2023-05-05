@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: Apple Founder
+  m_EditorClassIdentifier: 
+  _title: APPLE Founder
+  _content: "In 1976, Apple was founded by three men: Steve Jobs, Steve Wozniak,
+    and Ronald Wayne with the intention of selling Wozniak\u2019s hand-built Personal
+    Computer named Apple 1. The Apple 1 was sold as a motherboard with CPU, RAM and
+    basic textual-video chips. It then lacked a built-in keyboard, monitor, case
+    or any other Human Interface Devices (which was later added in 1977). "
+  _image: {fileID: 21300000, guid: f31480663a1290e4db61fc57b46054fa, type: 3}
+  canvasGroup: {fileID: 0}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720f6889561ad064583407d6b1caf8ed, type: 3}
+  m_Name: Thermal Paste
+  m_EditorClassIdentifier: 
+  itemName: Thermal Paste
+  ID: 6
+  icon: {fileID: 0}
+  m_object: {fileID: 1573256350120539490, guid: 00abbf9a2e4a55140964ffb52897477a, type: 3}
+  isStackable: 0
+  maxStackNumber: 1
+  description: 'Thermal grease, also called thermal paste or thermal compound, is
+    a substance used to promote better heat conduction between two surfaces and is
+    commonly used between a microprocessor and a heatsink .
+
+'
+  variety: 2
+  rarity: 0
+  buy_Price: []
+  sell_Price: []
+  clipOnUse: {fileID: 0}
+  playClipTimes: 0
+  coolDown: 0
+  consumableItemType: 0
+  consumableItemAttributes: []
+  useOnPickUp: 0
+  CDAllThisWhenUse: 0
+  CDAllConsumbleWhenUse: 0
+  equipmentPart: 0
+  equipmentItemAttributes: []

@@ -1,0 +1,993 @@
+; FBX 7.4.0 project file
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7400
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2022
+		Month: 10
+		Day: 18
+		Hour: 18
+		Minute: 59
+		Second: 0
+		Millisecond: 590
+	}
+	Creator: "FBX SDK/FBX Plugins version 2020.2"
+	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
+		Type: "UserData"
+		Version: 100
+		MetaData:  {
+			Version: 100
+			Title: "Created by FBX Exporter from Unity Technologies"
+			Subject: ""
+			Author: "Unity Technologies"
+			Keywords: "Nodes Meshes Materials Textures Cameras Lights Skins Animation"
+			Revision: "1.0"
+			Comment: ""
+		}
+		Properties70:  {
+			P: "DocumentUrl", "KString", "Url", "", "C:\Users\LawrenzDelRosario\Capstone\Assets\Jade Files\Test map\Sci fi\Prefabs\Characters\Seperated Characters\lffi6yhk_NPC..fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\LawrenzDelRosario\Capstone\Assets\Jade Files\Test map\Sci fi\Prefabs\Characters\Seperated Characters\lffi6yhk_NPC..fbx"
+			P: "Original", "Compound", "", ""
+			P: "Original|ApplicationVendor", "KString", "", "", ""
+			P: "Original|ApplicationName", "KString", "", "", "Unity FBX Exporter"
+			P: "Original|ApplicationVersion", "KString", "", "", "4.1.2"
+			P: "Original|DateTime_GMT", "DateTime", "", "", ""
+			P: "Original|FileName", "KString", "", "", ""
+			P: "LastSaved", "Compound", "", ""
+			P: "LastSaved|ApplicationVendor", "KString", "", "", ""
+			P: "LastSaved|ApplicationName", "KString", "", "", "Unity FBX Exporter"
+			P: "LastSaved|ApplicationVersion", "KString", "", "", "4.1.2"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", ""
+		}
+	}
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",-1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",1
+		P: "OriginalUnitScaleFactor", "double", "Number", "",1
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",0
+		P: "TimeProtocol", "enum", "", "",2
+		P: "SnapOnFrameMode", "enum", "", "",0
+		P: "TimeSpanStart", "KTime", "Time", "",0
+		P: "TimeSpanStop", "KTime", "Time", "",46186158000
+		P: "CustomFrameRate", "double", "Number", "",-1
+		P: "TimeMarker", "Compound", "", ""
+		P: "CurrentTimeMarker", "int", "Integer", "",-1
+	}
+}
+
+; Documents Description
+;------------------------------------------------------------------
+
+Documents:  {
+	Count: 1
+	Document: 1630375767296, "Scene", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", ""
+		}
+		RootNode: 0
+	}
+}
+
+; Document References
+;------------------------------------------------------------------
+
+References:  {
+}
+
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 51
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 50
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "TranslationMin", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMax", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMinX", "bool", "", "",0
+				P: "TranslationMinY", "bool", "", "",0
+				P: "TranslationMinZ", "bool", "", "",0
+				P: "TranslationMaxX", "bool", "", "",0
+				P: "TranslationMaxY", "bool", "", "",0
+				P: "TranslationMaxZ", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "RotationSpaceForLimitOnly", "bool", "", "",0
+				P: "RotationStiffnessX", "double", "Number", "",0
+				P: "RotationStiffnessY", "double", "Number", "",0
+				P: "RotationStiffnessZ", "double", "Number", "",0
+				P: "AxisLen", "double", "Number", "",10
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "RotationActive", "bool", "", "",0
+				P: "RotationMin", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMax", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMinX", "bool", "", "",0
+				P: "RotationMinY", "bool", "", "",0
+				P: "RotationMinZ", "bool", "", "",0
+				P: "RotationMaxX", "bool", "", "",0
+				P: "RotationMaxY", "bool", "", "",0
+				P: "RotationMaxZ", "bool", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "ScalingMin", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingMax", "Vector3D", "Vector", "",1,1,1
+				P: "ScalingMinX", "bool", "", "",0
+				P: "ScalingMinY", "bool", "", "",0
+				P: "ScalingMinZ", "bool", "", "",0
+				P: "ScalingMaxX", "bool", "", "",0
+				P: "ScalingMaxY", "bool", "", "",0
+				P: "ScalingMaxZ", "bool", "", "",0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "MinDampRangeX", "double", "Number", "",0
+				P: "MinDampRangeY", "double", "Number", "",0
+				P: "MinDampRangeZ", "double", "Number", "",0
+				P: "MaxDampRangeX", "double", "Number", "",0
+				P: "MaxDampRangeY", "double", "Number", "",0
+				P: "MaxDampRangeZ", "double", "Number", "",0
+				P: "MinDampStrengthX", "double", "Number", "",0
+				P: "MinDampStrengthY", "double", "Number", "",0
+				P: "MinDampStrengthZ", "double", "Number", "",0
+				P: "MaxDampStrengthX", "double", "Number", "",0
+				P: "MaxDampStrengthY", "double", "Number", "",0
+				P: "MaxDampStrengthZ", "double", "Number", "",0
+				P: "PreferedAngleX", "double", "Number", "",0
+				P: "PreferedAngleY", "double", "Number", "",0
+				P: "PreferedAngleZ", "double", "Number", "",0
+				P: "LookAtProperty", "object", "", ""
+				P: "UpVectorProperty", "object", "", ""
+				P: "Show", "bool", "", "",1
+				P: "NegativePercentShapeSupport", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Model: 1625786041872, "Model::Character_Robot_01", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1625786043872, "Model::Root", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",10,10,10
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1625786015872, "Model::Hips", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,8.7627612054348,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,90,81.4071655273438
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1625786033872, "Model::Spine_01", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.03932656347752,1.33226764113072e-16,4.61553712350911e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",2.31948046381693e-14,-180,168.558639526367
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1625786023872, "Model::Spine_02", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.81511696428061,1.55431228245169e-16,-7.10107341634621e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-2.05753755775761e-14,-180,168.751647949219
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1625786025872, "Model::Spine_03", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.79037246853113,2.22044620641463e-16,7.50972545436578e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-7.90360767962241e-15,-180,167.24365234375
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1628877368224, "Model::Clavicle_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.580117292702198,-0.419144798070192,-0.744715426117182
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",61.6877098083496,171.870391845703,80.0396728515625
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1628877370224, "Model::Shoulder_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.3197872787714,-4.85722588266155e-18,-2.66453528226143e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0.342738926410675,-27.4325332641602,-4.07213878631592
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1628877378224, "Model::Elbow_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",3.394740447402,-0.0144907098729163,-0.0143626428325661
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0.385259091854095,-4.65897417068481,4.71673583984375
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1626618992480, "Model::Hand_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",2.71145291626453,0,-0.0038136429793667
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",4.08202499105619e-15,4.10678100585938,-1.91106624882614e-13
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1626619000480, "Model::Finger_01", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.998252630233765,-0.0115958944661543,-0.328334048390388
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,5.03793334960937,-6.48635721206665
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1626619004480, "Model::Finger_02", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.424881465733051,-1.05818134516127e-16,-8.32667301556092e-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0.254575282335281,-2.23970460891724,-2.44291758537292
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1622681084320, "Model::Finger_03", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.351332756690681,-3.00324001778485e-15,3.77475848886632e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-1.30749511718749,8.35754394531248,-10.740743637085
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1617296518592, "Model::Finger_04", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.300323963165283,2.12677102125223e-15,-1.11022307735792e-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",3.74415564537048,-10.6080646514893,19.2217712402344
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1617297608992, "Model::IndexFinger_01", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.03965625166893,0.0398715143091977,0.267264968715608
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,-7.54500675201416,-0.488524585962296
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310564832, "Model::IndexFinger_02", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.409363210201263,-1.52764090342508e-17,2.44249084773561e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0.0105590820312479,1.23797607421875,-11.286792755127
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310582832, "Model::IndexFinger_03", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.379118812270463,-2.146200004916e-15,-3.83026975259415e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0.62252807617189,2.98785400390628,-6.5540943145752
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310584832, "Model::IndexFinger_04", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.377979408949614,-1.92840550030038e-15,-9.99200782546826e-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-1.02227783203124,3.09051513671876,18.2854919433594
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310570832, "Model::Thumb_01", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.351404794491827,-0.117069168481976,0.450553977862
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-4.26886828108763e-07,-32.2832870483398,-10.5173921585083
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310586832, "Model::Thumb_02", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.637021427974105,-6.10622711933902e-17,4.44089230943168e-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-2.58325195312503,14.0646057128906,-16.73215675354
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310568832, "Model::Thumb_03", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.566557003185153,2.9115599509009e-15,3.9968031301873e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-8.04028320312503,16.1446228027344,25.7886657714844
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310572832, "Model::Clavicle_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.580153428018093,-0.419141817837954,0.744715053588152
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-61.6877136230469,-171.870391845703,-99.960319519043
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310566832, "Model::Shoulder_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.31978616118431,6.47339163606375e-05,4.73534278455645e-07
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0.342738926410675,-27.4325332641602,-4.07213878631592
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310574832, "Model::Elbow_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-3.39474603533745,0.0144758654641919,0.0143626370118
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0.385259091854095,-4.65897417068481,4.71673583984375
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310576832, "Model::Hand_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.71144919097424,-2.84217107803628e-15,0.00381360878236592
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-1.63602702755615e-14,4.10678100585938,1.3383177487232e-13
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310578832, "Model::Finger_01_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.998250022530556,0.011600000289036,0.32833400182426
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,5.03793334960937,-6.48635721206665
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310580832, "Model::Finger_02_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.424880953505635,2.65344155536695e-06,-1.9789931915426e-07
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0.254575282335281,-2.23970460891724,-2.44291758537292
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310588832, "Model::Finger_03_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.351332477293909,-1.99784810916981e-06,1.48536094535245e-07
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-1.30749511718749,8.35754394531248,-10.740743637085
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310558832, "Model::Finger_04_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.300311320461333,1.13347141450504e-05,3.59109932901447e-06
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",3.74415564537048,-10.6080646514893,19.2217712402344
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310562832, "Model::IndexFinger_01_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.03966007009149,-0.0399000011384487,-0.267265015281737
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,-7.54500675201416,-0.488524585962296
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310590832, "Model::IndexFinger_02_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.409359158948064,9.69869304867643e-06,-4.95674834510851e-07
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0.0105590820312479,1.23797607421875,-11.286792755127
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310560832, "Model::IndexFinger_03_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.37912130355835,3.24998353562478e-05,-4.54529214266586e-07
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0.62252807617189,2.98785400390628,-6.5540943145752
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310598832, "Model::IndexFinger_04_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.377933285199106,-5.26570886449917e-05,-1.55073820451435e-06
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-1.02227783203124,3.09051513671876,18.2854919433594
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310596832, "Model::Thumb_01_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.351400021463633,0.117100006900728,-0.450554024428129
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-4.26886828108763e-07,-32.2832870483398,-10.5173921585083
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310602832, "Model::Thumb_02_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.63701462931931,-7.81182507125777e-05,4.36381171198263e-06
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-2.58325195312503,14.0646057128906,-16.73215675354
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310604832, "Model::Thumb_03_1", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.566550856456161,9.83550307864789e-07,-2.02795433779102e-06
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-8.04028320312503,16.1446228027344,25.7886657714844
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310606832, "Model::Neck", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.11889680847526,-6.66133820565358e-17,-4.62441318507211e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",1.83991840352045e-15,-1.49638941103654e-13,-4.78367853164673
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310608832, "Model::Head", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.21644362807274,-1.50990339554653e-15,-5.05917641989784e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",80.8598022460938,90,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310612832, "Model::Eyebrows", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.52435501660766e-30,1.27669209614396,1.22722154483199
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310614832, "Model::Eyes", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",2.05103839589243e-30,0.944760628044605,1.22722154483199
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310610832, "Model::UpperLeg_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.41157784871757,-0.269207521341741,0.989671051502228
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-81.4071655273438,-90.0000076293945,91.8189392089844
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310620832, "Model::LowerLeg_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-3.99309210479259,-3.80502669372618e-06,1.46549438456427e-15
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",80.1400756835938,-10.5278902053833,-8.15286540985107
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310600832, "Model::Ankle_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-3.77123281359673,1.31694957161699e-06,-8.41103897641915e-06
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-9.68283081054687,179.568161010742,-118.764572143555
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310616832, "Model::Ball_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.1284033767879,-1.68495728480877e-07,-7.10542769509069e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",5.41277959953401e-13,-4.30394191423475e-13,31.3304138183594
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310618832, "Model::Toes_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.729575054720044,2.66453528226143e-16,1.77635692377267e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-4.43655667758946e-11,90,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310594832, "Model::UpperLeg_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.411576870828867,-0.269206985831261,-0.98967058584094
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",81.4071655273438,90,-88.1810455322266
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632310592832, "Model::LowerLeg_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",3.99309061467648,-6.88338305376971e-16,-5.33421480075233e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",80.1400756835938,-10.5278902053833,-8.15286540985107
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632305231408, "Model::Ankle_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",3.77123542129993,-7.77156120546332e-16,1.68198789951247e-15
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-9.68283081054687,179.568161010742,-118.764572143555
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632305235408, "Model::Ball_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.12840365618467,-1.15463196943296e-15,-2.11335113250739e-16
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-4.97912935925118e-14,-1.62494217842597e-13,31.3304138183594
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 1632305243408, "Model::Toes_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationOrder", "enum", "", "",4
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.729575660079718,2.0400871769669e-17,3.40871281813934e-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",3.05581796845866e-12,90,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+}
+
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::Character_Robot_01, Model::RootNode
+	C: "OO",1625786041872,0
+	
+	;Model::Root, Model::Character_Robot_01
+	C: "OO",1625786043872,1625786041872
+	
+	;Model::Hips, Model::Root
+	C: "OO",1625786015872,1625786043872
+	
+	;Model::Spine_01, Model::Hips
+	C: "OO",1625786033872,1625786015872
+	
+	;Model::UpperLeg_L, Model::Hips
+	C: "OO",1632310610832,1625786015872
+	
+	;Model::UpperLeg_R, Model::Hips
+	C: "OO",1632310594832,1625786015872
+	
+	;Model::Spine_02, Model::Spine_01
+	C: "OO",1625786023872,1625786033872
+	
+	;Model::Spine_03, Model::Spine_02
+	C: "OO",1625786025872,1625786023872
+	
+	;Model::Clavicle_L, Model::Spine_03
+	C: "OO",1628877368224,1625786025872
+	
+	;Model::Clavicle_R, Model::Spine_03
+	C: "OO",1632310572832,1625786025872
+	
+	;Model::Neck, Model::Spine_03
+	C: "OO",1632310606832,1625786025872
+	
+	;Model::Shoulder_L, Model::Clavicle_L
+	C: "OO",1628877370224,1628877368224
+	
+	;Model::Elbow_L, Model::Shoulder_L
+	C: "OO",1628877378224,1628877370224
+	
+	;Model::Hand_L, Model::Elbow_L
+	C: "OO",1626618992480,1628877378224
+	
+	;Model::Finger_01, Model::Hand_L
+	C: "OO",1626619000480,1626618992480
+	
+	;Model::IndexFinger_01, Model::Hand_L
+	C: "OO",1617297608992,1626618992480
+	
+	;Model::Thumb_01, Model::Hand_L
+	C: "OO",1632310570832,1626618992480
+	
+	;Model::Finger_02, Model::Finger_01
+	C: "OO",1626619004480,1626619000480
+	
+	;Model::Finger_03, Model::Finger_02
+	C: "OO",1622681084320,1626619004480
+	
+	;Model::Finger_04, Model::Finger_03
+	C: "OO",1617296518592,1622681084320
+	
+	;Model::IndexFinger_02, Model::IndexFinger_01
+	C: "OO",1632310564832,1617297608992
+	
+	;Model::IndexFinger_03, Model::IndexFinger_02
+	C: "OO",1632310582832,1632310564832
+	
+	;Model::IndexFinger_04, Model::IndexFinger_03
+	C: "OO",1632310584832,1632310582832
+	
+	;Model::Thumb_02, Model::Thumb_01
+	C: "OO",1632310586832,1632310570832
+	
+	;Model::Thumb_03, Model::Thumb_02
+	C: "OO",1632310568832,1632310586832
+	
+	;Model::Shoulder_R, Model::Clavicle_R
+	C: "OO",1632310566832,1632310572832
+	
+	;Model::Elbow_R, Model::Shoulder_R
+	C: "OO",1632310574832,1632310566832
+	
+	;Model::Hand_R, Model::Elbow_R
+	C: "OO",1632310576832,1632310574832
+	
+	;Model::Finger_01_1, Model::Hand_R
+	C: "OO",1632310578832,1632310576832
+	
+	;Model::IndexFinger_01_1, Model::Hand_R
+	C: "OO",1632310562832,1632310576832
+	
+	;Model::Thumb_01_1, Model::Hand_R
+	C: "OO",1632310596832,1632310576832
+	
+	;Model::Finger_02_1, Model::Finger_01_1
+	C: "OO",1632310580832,1632310578832
+	
+	;Model::Finger_03_1, Model::Finger_02_1
+	C: "OO",1632310588832,1632310580832
+	
+	;Model::Finger_04_1, Model::Finger_03_1
+	C: "OO",1632310558832,1632310588832
+	
+	;Model::IndexFinger_02_1, Model::IndexFinger_01_1
+	C: "OO",1632310590832,1632310562832
+	
+	;Model::IndexFinger_03_1, Model::IndexFinger_02_1
+	C: "OO",1632310560832,1632310590832
+	
+	;Model::IndexFinger_04_1, Model::IndexFinger_03_1
+	C: "OO",1632310598832,1632310560832
+	
+	;Model::Thumb_02_1, Model::Thumb_01_1
+	C: "OO",1632310602832,1632310596832
+	
+	;Model::Thumb_03_1, Model::Thumb_02_1
+	C: "OO",1632310604832,1632310602832
+	
+	;Model::Head, Model::Neck
+	C: "OO",1632310608832,1632310606832
+	
+	;Model::Eyebrows, Model::Head
+	C: "OO",1632310612832,1632310608832
+	
+	;Model::Eyes, Model::Head
+	C: "OO",1632310614832,1632310608832
+	
+	;Model::LowerLeg_L, Model::UpperLeg_L
+	C: "OO",1632310620832,1632310610832
+	
+	;Model::Ankle_L, Model::LowerLeg_L
+	C: "OO",1632310600832,1632310620832
+	
+	;Model::Ball_L, Model::Ankle_L
+	C: "OO",1632310616832,1632310600832
+	
+	;Model::Toes_L, Model::Ball_L
+	C: "OO",1632310618832,1632310616832
+	
+	;Model::LowerLeg_R, Model::UpperLeg_R
+	C: "OO",1632310592832,1632310594832
+	
+	;Model::Ankle_R, Model::LowerLeg_R
+	C: "OO",1632305231408,1632310592832
+	
+	;Model::Ball_R, Model::Ankle_R
+	C: "OO",1632305235408,1632305231408
+	
+	;Model::Toes_R, Model::Ball_R
+	C: "OO",1632305243408,1632305235408
+}
+;Takes section
+;----------------------------------------------------
+
+Takes:  {
+	Current: ""
+}

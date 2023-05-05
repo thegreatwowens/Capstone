@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720f6889561ad064583407d6b1caf8ed, type: 3}
+  m_Name: CPU
+  m_EditorClassIdentifier: 
+  itemName: CPU
+  ID: 3
+  icon: {fileID: 21300000, guid: 441a697d6388f4d48ba07aa561b7318e, type: 3}
+  m_object: {fileID: 518733664561181430, guid: 30fe2d9e2ac98f54fae4dd67043218e5, type: 3}
+  isStackable: 0
+  maxStackNumber: 1
+  description: 'The component of a computer system that controls the interpretation
+    and execution of instructions.
+
+'
+  variety: 2
+  rarity: 0
+  buy_Price: []
+  sell_Price: []
+  clipOnUse: {fileID: 0}
+  playClipTimes: 0
+  coolDown: 0
+  consumableItemType: 0
+  consumableItemAttributes: []
+  useOnPickUp: 0
+  CDAllThisWhenUse: 0
+  CDAllConsumbleWhenUse: 0
+  equipmentPart: 0
+  equipmentItemAttributes: []
