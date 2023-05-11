@@ -937,7 +937,13 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -951,11 +957,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: 3e3a691c-bcc0-4a07-ba01-9dc3b477791e
+  cloudProjectId: cab3a5a9-8181-4564-ab2f-a6cfbac57c2f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: World of Computing
+  organizationId: greatwowens
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
