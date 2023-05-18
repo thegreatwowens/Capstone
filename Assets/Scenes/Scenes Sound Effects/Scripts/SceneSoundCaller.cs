@@ -1,38 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneSoundCaller : MonoBehaviour
+{  
+
+  public bool isMainMenu;
+  public bool isTimeline;
+
+
+void Start()
 {
-    [SerializeField]
-    ScriptableExternalSound[] sounds;
-    SoundManager manager;
 
-    private void Awake()
+    if(isMainMenu){
+          SoundManager.Instance.PlayMusic("BGMusicMainMenu",true);
+    }else if(isTimeline)
     {
-        manager = FindObjectOfType<SoundManager>();   
-        
-        
+            SoundManager.Instance.PlayMusic("BGMusicTimeline",true);
     }
 
-    private void Start()
-    {
-        foreach (ScriptableExternalSound sound in sounds)
-        {
-          
+  
+}
+  public void resetVolume(){
+      SoundManager.Instance.bGSource.volume =1;
+  }
+
+  public void StopMusic(){
+      SoundManager.Instance.StopMusic();
         }
-
-        foreach (ScriptableExternalSound sound in sounds)
-        {
-            manager.Play(sound.audioName);
-        }
-
-    }
-      public void ResetSceneSounds()
-    {
-        manager.Stop();
-
-    }
 
 
 }

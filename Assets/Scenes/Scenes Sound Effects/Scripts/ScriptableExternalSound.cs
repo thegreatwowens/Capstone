@@ -23,16 +23,4 @@ public class ScriptableExternalSound : ScriptableObject
     {
 
     }
-    public void Play()
-    {
-        manager.Play(audioName, type.ToString());
-    }
-    public void PlayOneShot()
-    {
-
-    }
-    public  void PlayOnAwake()
-    {
-        manager.Play(audioName);
-    }
 }

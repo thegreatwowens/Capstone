@@ -7566,7 +7566,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -7891,8 +7891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fddc60c809ce894397b6cabe642ef23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerinput: {fileID: 0}
-  control: {fileID: 0}
+  playerinput: {fileID: 7288888847756262567}
+  control: {fileID: 9115966638042220014}
 --- !u!114 &579662013808058848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8668,6 +8668,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8491620072619268166, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
   m_PrefabInstance: {fileID: 1598290025241435359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9115966638042220014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7542455241271236913, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
+  m_PrefabInstance: {fileID: 1598290025241435359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b612f10765a2f4088e8267dcece8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9152824420423942706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7578178416171753197, guid: 4ef754a40f51269459452686a239f2d7, type: 3}

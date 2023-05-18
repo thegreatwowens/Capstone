@@ -2,139 +2,108 @@ using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance;
+    public static SoundManager Instance;
     [Range(0, 1)]
     public float MasterVolume = 1;
-    public Sound[] UISounds;
-    public Sound[] SoundEffects;
-    public Sound[] BackgroundMusic;
-
-    AudioMixerGroup mixerGroup;
-
-
-
-
-    private void Awake()
+    public SoundClip[] bGMusic,fXClip;
+    
+    [SerializeField]
+    AudioMixer mixer;
+    private float master,music,soundFX;
+    public AudioSource bGSource,fXSource;
+    
+    void Awake()
     {
-      
-        if ( instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Application.targetFrameRate = 200;
+        if(Instance == null){
+                Instance = this;
+                DontDestroyOnLoad(this.gameObject);
 
-        foreach (Sound s in UISounds)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.loop = s.loop;
-            s.source.pitch = s.pitch;
-            s.source.outputAudioMixerGroup = mixerGroup;
-        }
-        foreach (Sound s in SoundEffects)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.loop = s.loop;
-            s.source.pitch = s.pitch;
-            s.source.outputAudioMixerGroup = mixerGroup;
-        }
-        foreach (Sound s in BackgroundMusic)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.loop = s.loop;
-            s.source.pitch = s.pitch;
-
-            s.source.outputAudioMixerGroup = mixerGroup;
+        }else{
+            Destroy(this.gameObject);
         }
 
     }
-    private void Update()
+
+    Scene currentScene;
+
+void OnEnable()
+{
+    SceneManager.sceneLoaded += OnSceneLoaded;
+}
+
+  void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-
-
+        currentScene = SceneManager.GetActiveScene();
     }
-    public void Play(string name,string type)
-    {
-       if(type == "UISound")
-        {
-            Sound UIEffects = Array.Find(UISounds, sound => sound.name == name);
-            UIEffects.source.Play();
-        }
-        if (type == "BackgroundMusic")
-        {
+
+    private void OnDisable() {
+      SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+   public void PlayMusic(string name,bool isLooping){
+         SoundClip sound =     Array.Find(bGMusic,x => x.name == name);
             
-            Sound _BackgroundMusic = Array.Find(BackgroundMusic, sound => sound.name == name);
-            _BackgroundMusic.source.Play();
-        }
-        if(type == "SoundFx") {
-            Sound _SoundEffects = Array.Find(SoundEffects, sound => sound.name == name);
-            _SoundEffects.source.Play();
-        }
- 
+            if(sound == null){
+                
+                print ("No sound Named: "+ name+" at "+ bGMusic.ToString());
+
+            } 
+            else{
+                if(isLooping){
+                        bGSource.loop = true;
+                }else
+                    bGSource.loop = false;   
+            
+                bGSource.clip = sound.clip;
+                bGSource.Play();
+            }
 
     }
-    public void Play(string name)
-    {
-        Sound _BackgroundMusic = Array.Find(BackgroundMusic, sound => sound.name == name);
-        _BackgroundMusic.source.Play();
+    public void StopMusic(){
+            bGSource.Stop();
+    }
+    public void PlaySoundFx(string name){
+        SoundClip sound =  Array.Find(fXClip,x => x.name == name);
+            
+            if(sound == null){
+                
+                print ("No sound Named: "+ name+" at "+ fXSource.ToString());
 
-    }
+            } 
+            else{
 
-    public void Stop(string name)
-    {
-        Sound _BackgroundMusic = Array.Find(BackgroundMusic, sound => sound.name == name);
-        _BackgroundMusic.source.Stop();
-    }
-    public void Stop()
-    {
-        Sound _BackgroundMusic = Array.Find(BackgroundMusic, sound => sound.name == name);
-        _BackgroundMusic.source.Stop();
-    }
-    public void Stop(string name,string type)
-    {
-        if (type == "UISound")
-        {
-            Sound s = Array.Find(UISounds, sound => sound.name == name);
-            s.source.Stop();
-            Debug.Log("Stopped Sound");
-        }
-           
-    }
-    public void PauseMusic(string name, string type)
-    {
-        if(type == " UISound") {
-            Sound UIEffects = Array.Find(UISounds, sound => sound.name == name);
-            UIEffects.source.Pause();
-        }
-        if (type == "BackgroundMusic")
-        {
-            Sound _BackgroundMusic = Array.Find(BackgroundMusic, sound => sound.name == name);
-            _BackgroundMusic.source.Pause();
-        }
-        if (type == "SoundFx") { Sound _SoundEffects = Array.Find(SoundEffects, sound => sound.name == name);
-            _SoundEffects.source.Pause();
-        }
-    }
-    private void Start()
-    {
-
+                fXSource.PlayOneShot(sound.clip);
+            }
+        
     }
 
+    public void VolumeSliderMaster (float volume){
+         mixer.SetFloat("Master",MathF.Log10(volume)*20);
+         master = MathF.Log10(volume)*20;
+    }
+    public void VolumeSliderSoundFx(float volume){
+                mixer.SetFloat("SoundFx",MathF.Log10(volume)*20);
+                soundFX = MathF.Log10(volume)*20;
+    }
+    public void VolumeSliderMusic(float volume){
+                mixer.SetFloat("BGMusic",MathF.Log10(volume)*20);
+                music = MathF.Log10(volume)*20;
+    }
+    
+    public float ReturnMasterVolume(){
+        
+        return master;
+    }
+    
+    public float ReturnSoundFx(){
+
+        return soundFX;
+    }
+    
+    public float ReturnMusic(){
+        return music;
+    } 
 
 
 }

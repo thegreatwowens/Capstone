@@ -60,7 +60,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DialogueSounds
-  m_OutputGroup: {fileID: 0}
+  m_OutputGroup: {fileID: 799148442423863732, guid: 765c933c4bda9fa47bc5a3c30a4b33f3, type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}

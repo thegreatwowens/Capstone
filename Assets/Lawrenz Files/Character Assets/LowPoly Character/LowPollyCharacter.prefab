@@ -9708,6 +9708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RightHandSlot: {fileID: 5060393507500086499}
+  achievementLocked: []
 --- !u!114 &5508851891709934292
 MonoBehaviour:
   m_ObjectHideFlags: 0

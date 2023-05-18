@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
-using PixelCrushers.DialogueSystem;
 using UnityEngine.UI;
 using TMPro;
 public class GameManager : MonoBehaviour
@@ -23,6 +19,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+    
     }
     public void Female() {
             selectedCharacters = 1;

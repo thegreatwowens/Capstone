@@ -11,9 +11,6 @@ public class GlobalInputLock : MonoBehaviour
 
     private void Update()
     {
-        playerinput = FindObjectOfType<vThirdPersonInput>();
-
-        control = FindObjectOfType<InventoryInputControl>();
         
         if(session)
         {
@@ -33,10 +30,6 @@ public class GlobalInputLock : MonoBehaviour
           //  playerinput.SetLockCameraInput(false);
             control.EnableInput();
         }
-    }
-
-    private void OnValidate()
-    {
     }
 
     public void EnableAllMovements()
