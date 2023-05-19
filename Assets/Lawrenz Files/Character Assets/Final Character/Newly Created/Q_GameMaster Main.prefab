@@ -10525,8 +10525,6 @@ GameObject:
   - component: {fileID: 7542854357393854041}
   - component: {fileID: 7542845731587876585}
   - component: {fileID: 7542700209922909107}
-  - component: {fileID: 9173920689461002086}
-  - component: {fileID: 5917503164107668994}
   m_Layer: 0
   m_Name: Q_InventoryManager
   m_TagString: Untagged
@@ -10781,42 +10779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSortingOrders: 010000000000000002000000
---- !u!114 &9173920689461002086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7582038821007108317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83a3a54b3b00b02409d9050d6d2d0562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnEnable:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDisable:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &5917503164107668994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7582038821007108317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83a3a54b3b00b02409d9050d6d2d0562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnEnable:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDisable:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &7582051723721099021
 GameObject:
   m_ObjectHideFlags: 0

@@ -93,10 +93,6 @@ namespace QInventory
         public VendorTrigger activeVendorTrigger;
         [HideInInspector]
         public CraftTrigger activeCraftTrigger;
-        private void Update()
-        {
-            player = GameObject.FindGameObjectWithTag("Player");
-        }
         public void PlayAddItemClip()
         {
             m_AudioSource.PlayOneShot(m_AddItemClip);

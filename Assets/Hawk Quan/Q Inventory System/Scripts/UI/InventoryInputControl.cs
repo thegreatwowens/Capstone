@@ -39,7 +39,6 @@ namespace QInventory
                 }
                 else
                 {
-                    extension.DisableInputs();
                 }
                 
              

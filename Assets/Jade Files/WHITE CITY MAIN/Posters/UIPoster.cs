@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -48,10 +46,12 @@ namespace OwnCode.Choi
             _content.text = poster._content;
             _image.sprite = poster._image;
             panel.OpenPanel();
+            
         }
         public void UIHide()
         {
             panel.HidePanel();
+            SoundManager.Instance.PlaySoundFx("UIClick");
         }
     }
 }

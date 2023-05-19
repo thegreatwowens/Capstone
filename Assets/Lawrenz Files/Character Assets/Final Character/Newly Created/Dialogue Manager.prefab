@@ -10137,7 +10137,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 0
   allowOnlyOneInstance: 1
   dialogueTimeMode: 0
-  debugLevel: 3
+  debugLevel: 0
 --- !u!114 &5129392401813788123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13993,7 +13993,6 @@ GameObject:
   - component: {fileID: 8665761612066464943}
   - component: {fileID: 8665761612054591259}
   - component: {fileID: 8665761612051150691}
-  - component: {fileID: 5458567693644125730}
   - component: {fileID: 1073037908177428418}
   m_Layer: 5
   m_Name: Dialogue Panel
@@ -14129,20 +14128,6 @@ MonoBehaviour:
   onBackButtonDown:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5458567693644125730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8665761612045138349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fddc60c809ce894397b6cabe642ef23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerinput: {fileID: 0}
-  control: {fileID: 0}
 --- !u!114 &1073037908177428418
 MonoBehaviour:
   m_ObjectHideFlags: 0

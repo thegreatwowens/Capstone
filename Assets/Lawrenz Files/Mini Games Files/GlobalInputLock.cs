@@ -1,6 +1,9 @@
+
 using UnityEngine;
 using Invector.vCharacterController;
 using QInventory;
+using PixelCrushers.DialogueSystem;
+
 public class GlobalInputLock : MonoBehaviour
 {
     [SerializeField]
@@ -12,7 +15,7 @@ public class GlobalInputLock : MonoBehaviour
     private void Update()
     {
         
-        if(session)
+        if(DialogueManager.Instance.isConversationActive && control.isActiveAndEnabled)
         {
             session = true;
             playerinput.SetLockAllInput(true);
@@ -21,21 +24,16 @@ public class GlobalInputLock : MonoBehaviour
            // playerinput.SetLockCameraInput(true);
             control.DisableInputs();
 
+        }   else{
+               control.EnableInput();
+                  playerinput.SetLockAllInput(false);
         }
-        else
-        {
-            playerinput.SetLockAllInput(false);
-          //  playerinput.SetLockCameraInput(false);
-          //  playerinput.SetLockBasicInput(false);
-          //  playerinput.SetLockCameraInput(false);
-            control.EnableInput();
-        }
-    }
 
+    }
     public void EnableAllMovements()
     {
-        session = false;
- 
+            session = false;
+    
     }
     public void DisableAllPlayerInputMovement() {
         session = true;

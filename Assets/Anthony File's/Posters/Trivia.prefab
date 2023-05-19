@@ -116,10 +116,8 @@ GameObject:
   - component: {fileID: 4878197875851582207}
   - component: {fileID: 4878197875851582201}
   - component: {fileID: 4878197875851582204}
-  - component: {fileID: 4878197875851582205}
   - component: {fileID: 1047026644}
   - component: {fileID: 158633117821744466}
-  - component: {fileID: 9005483245568285665}
   - component: {fileID: 424926682947253198}
   - component: {fileID: 6242445686404155270}
   m_Layer: 0
@@ -313,20 +311,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9279159, y: 0.90734684, z: 4.7101364}
   m_Center: {x: 0.000000097416724, y: -0.5359468, z: 1.855068}
---- !u!114 &4878197875851582205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4878197875851582182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0bc773dff5516646836b449eee4b711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  commentText: 
-  commentIconType: 0
 --- !u!114 &1047026644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,20 +533,6 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
---- !u!114 &9005483245568285665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4878197875851582182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e5058278418434fa2822a7a8c526ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioName: QuestCompleted
-  type: 3
 --- !u!114 &424926682947253198
 MonoBehaviour:
   m_ObjectHideFlags: 0
