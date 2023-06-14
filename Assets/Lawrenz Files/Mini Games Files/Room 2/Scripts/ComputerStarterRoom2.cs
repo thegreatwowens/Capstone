@@ -19,8 +19,6 @@ namespace OwnCode
         private TextMeshProUGUI textQuestionValue;
         [SerializeField]
         List<Room2Questions> Questions;
-        GlobalInputLock _lock;
-        MouseSettingsInput _input;
         [SerializeField]
         List<GameObject> Choices;
 
@@ -44,8 +42,7 @@ namespace OwnCode
         public UnityEvent OnWrong;
         private void Start()
         {
-            _input = GameObject.Find("GameManager").GetComponent<MouseSettingsInput>();
-            _lock = GameObject.Find("GameManager").GetComponent<GlobalInputLock>();
+     
             manager = GameObject.Find("GameManager").GetComponent<Room2GameManager>();
             trigger = transform.GetChild(0).GetComponent<Usable>();
             for (int j = 0; j <= Choices.Count - 1; j++)
@@ -82,10 +79,11 @@ namespace OwnCode
         }
         public void FlashScreen()
         {
-            _lock.DisableAllPlayerInputMovement();
+
+            GlobalInputLock.Instance.DisableAllPlayerInputMovement();
             inSession = true;
             panel.OpenPanel();
-            _input.EnableMouseUI();
+            MouseSettingsInput.Instance.EnableMouseUI();
             objectivePanel.HidePanel();
             StartCoroutine(cameraFocus());
 
@@ -96,8 +94,8 @@ namespace OwnCode
             sequencer.m_delayTimeLeft = 0;
             inSession = false;
             WrongPanel.transform.GetComponent<PanelManager>().OpenPanel();
-            _lock.EnableAllMovements();
-            _input.DiableMouseUI();
+            GlobalInputLock.Instance.EnableAllMovements();
+            MouseSettingsInput.Instance.DisableMouseUI();
             objectivePanel.OpenPanel();
             DialogueManager.ShowAlert("Wrong Answer!");
             Debug.Log("Wrong Called at: " + this.gameObject.name);
@@ -112,8 +110,8 @@ namespace OwnCode
             sequencer.m_delayTimeLeft = 0;
             inSession = false;
             CorrectPanel.transform.GetComponent<PanelManager>().OpenPanel();
-            _lock.EnableAllMovements();
-            _input.DiableMouseUI();
+            GlobalInputLock.Instance.EnableAllMovements();
+            MouseSettingsInput.Instance.DisableMouseUI();
             objectivePanel.OpenPanel();
             DialogueManager.ShowAlert("Correct Answer!");
             Debug.Log("Correct Called at: " + this.gameObject.name);

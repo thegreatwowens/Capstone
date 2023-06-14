@@ -3,7 +3,6 @@ using DiZTools_AchievementsSystem;
 
 public class AchievementExternalSender : MonoBehaviour
 {
-    AchievementTrigger achievementTrigger;
     QuizManager quizManager;
     #region variables
     // scoreQuiz
@@ -17,9 +16,11 @@ public class AchievementExternalSender : MonoBehaviour
     }
     private void Update()
     {
-        achievementTrigger = GameObject.FindObjectOfType<AchievementTrigger>();
+       
         #region QuizManager Settings 
+            if(quizManager !=null)
         difficulty = quizManager.returnDifficulty();
+         if(quizManager !=null)
         scoreCount = quizManager.returnScoreCount();
         if (quizManager != null) {
 
@@ -30,17 +31,21 @@ public class AchievementExternalSender : MonoBehaviour
             if (scoreCount == 10)
             {
                 if (difficulty == "easy")
-                    achievementTrigger.EasyQuizCaller();
+                        if(AchievementsManager.Instance !=null)
+                    AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.EasyQuizComplete,true);
             }
             if (scoreCount == 20)
             {
                 if (difficulty == "normal")
-                    achievementTrigger.NormalQuizCaller();
+                               if(AchievementsManager.Instance !=null)
+                     AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.NormalQuizComplete,true);
+
             }
             if (scoreCount == 30)
             {
                 if (difficulty == "hard")
-                    achievementTrigger.HardQuizCaller();
+                               if(AchievementsManager.Instance !=null)
+                     AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.HardQuizComplete,true);
             }
         }
         #endregion
@@ -71,6 +76,7 @@ public class AchievementExternalSender : MonoBehaviour
 
     public void NetworkingMaster()
     {
-        achievementTrigger.NetworkAchievement();
+            if(AchievementsManager.Instance !=null)
+        AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.NetworkingExpert,+5);
     }
 }

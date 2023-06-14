@@ -251,7 +251,7 @@ public class QuizManager : SequencerCommandDelay
 
     public void EndSession()
     {
-        mouse.DiableMouseUI();
+        mouse.DisableMouseUI();
         session = false;
         sequencer.m_delayTimeLeft = 0;
         globallock.EnableAllMovements();
@@ -317,7 +317,7 @@ public class QuizManager : SequencerCommandDelay
       //  _character.SetLockBasicInput(false);
         trigger.enabled = true;
         vGenericAction.enabled = true;
-        mouse.DiableMouseUI();
+        mouse.DisableMouseUI();
         mainPanel.HideUI();
         resetScoreCount();
         answerfield.text = "";

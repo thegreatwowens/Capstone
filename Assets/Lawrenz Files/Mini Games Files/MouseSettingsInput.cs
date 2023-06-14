@@ -5,21 +5,22 @@ using PlayMaker;
 
 public class MouseSettingsInput : MonoBehaviour
 {
-    GameObject player;
+    public static MouseSettingsInput Instance;
+    public   GameObject player;
     bool enable;
     bool disable;
     bool attackmode;
-    PlayMakerFSM fsm;
-    
-    void Start()
+   public PlayMakerFSM fsm;
+    void Awake()
     {
+        Instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-      fsm = PlayMakerFSM.FindFsmOnGameObject(player,"Mouse Settings Default");
+      //  player = GameObject.FindGameObjectWithTag("Player");
+    //  fsm = PlayMakerFSM.FindFsmOnGameObject(player,"Mouse Settings Default");
         
         if (enable)
         {
@@ -39,7 +40,7 @@ public class MouseSettingsInput : MonoBehaviour
         enable = true;
 
     }
-    public void DiableMouseUI()
+    public void DisableMouseUI()
     {
         disable = true;
     }

@@ -4813,8 +4813,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9100002
+    canvasScrollPosition: {x: 6.578949, y: 117.105194}
+    canvasZoom: 0.76000035
   - id: 10
     fields:
     - title: Title
@@ -6598,7 +6598,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 673
-        y: 131
+        y: 156
         width: 160
         height: 30
     - id: 9
@@ -7042,8 +7042,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 880.63257
-        y: 127.594925
+        x: 885.63257
+        y: 151.59492
         width: 160
         height: 30
     - id: 17
@@ -7091,12 +7091,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 880.63257
-        y: 177.59492
+        x: 882.63257
+        y: 236.59492
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 34.841156, y: 0}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 1
   - id: 14
     fields:
@@ -7827,7 +7827,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: SetQuestState("Something is missing", "success")
+      userScript: SetQuestState("Something is missing", "active")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8268,8 +8268,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasScrollPosition: {x: 26.41859, y: 95.30249}
+    canvasZoom: 1.1499999
   - id: 15
     fields:
     - title: Title
@@ -8532,7 +8532,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 33
-        y: 192
+        y: 194.12766
         width: 160
         height: 30
     - id: 4

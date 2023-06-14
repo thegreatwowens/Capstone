@@ -46,12 +46,16 @@ namespace OwnCode.Choi
             _content.text = poster._content;
             _image.sprite = poster._image;
             panel.OpenPanel();
-            
+             MouseSettingsInput.Instance.EnableMouseUI();
+             GlobalInputLock.Instance.DisableAllPlayerInputMovement();
         }
         public void UIHide()
         {
             panel.HidePanel();
             SoundManager.Instance.PlaySoundFx("UIClick");
+             MouseSettingsInput.Instance.DisableMouseUI();
+             GlobalInputLock.Instance.EnableAllMovements();
+             
         }
     }
 }

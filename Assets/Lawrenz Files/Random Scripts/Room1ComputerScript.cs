@@ -40,9 +40,10 @@ namespace OwnCode
         }
         public void SessionStart()
         {
+            MouseSettingsInput.Instance.EnableMouseUI();
             session = true;
             trigger.enabled = false;
-            inputplayer.DisableAllPlayerInputMovement();
+            GlobalInputLock.Instance.DisableAllPlayerInputMovement();
             panel.OpenPanel();
             QuestionPopulator();
 
@@ -54,8 +55,9 @@ namespace OwnCode
         }
         public void EndSession()
         {
+            MouseSettingsInput.Instance.DisableMouseUI();
             sequencer.m_delayTimeLeft = 0f;
-            inputplayer.EnableAllMovements();
+           GlobalInputLock.Instance.EnableAllMovements();
             panel.HidePanel();
             session = false;
             trigger.enabled = true;
@@ -64,8 +66,9 @@ namespace OwnCode
         }
         public void ClosedSession()
         {
+            MouseSettingsInput.Instance.DisableMouseUI();
             sequencer.m_delayTimeLeft = 0f;
-            inputplayer.EnableAllMovements();
+            GlobalInputLock.Instance.EnableAllMovements();
             panel.HidePanel();
             session = false;
             trigger.enabled = true;
