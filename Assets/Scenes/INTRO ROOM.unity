@@ -12562,7 +12562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requiredTag: Player
-  m_destinationSceneName: Update City 1
+  m_destinationSceneName: City
   m_spawnpointNameInDestinationScene: 
   m_onUsePortal:
     m_PersistentCalls:

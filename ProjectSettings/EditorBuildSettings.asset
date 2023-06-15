@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 0ad4bda939ed5de43921f267a305d60c
   - enabled: 1
-    path: Assets/Scenes/Update City 1.unity
+    path: Assets/Scenes/City.unity
     guid: ecbab96e9858d114887319b9e1df6d73
   - enabled: 1
     path: Assets/Scenes/INTRO ROOM.unity

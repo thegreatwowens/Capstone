@@ -18,7 +18,7 @@ MonoBehaviour:
     actions.
   globalUserScript: 
   emphasisSettings:
-  - color: {r: 0, g: 0, b: 0, a: 0}
+  - color: {r: 1, g: 0.76150453, b: 0, a: 0}
     bold: 0
     italic: 0
     underline: 0
