@@ -24,18 +24,31 @@ bool firstSentence,secondSentence,thirdsentence;
 public void SkipButtonClicked(){
     if(!firstSentence){
 
-        director.time = 5.55;
+        director.time = 4.9;
         effectFirstText.Stop();
         firstSentence =true;
     }else if(!secondSentence&& effectFirstText.isPlaying == false){
-        director.time = 16;
+        director.time = 19.85;
         effectSecondText.Stop();
         secondSentence =true;
     }else if(!thirdsentence && effectSecondText.isPlaying == false){
-        director.time = 28;
+        director.time = 37.25;
         effectThirdText.Stop();
         thirdsentence = true;
     }
     
+}
+void Update()
+{
+    if(director.time >=4.9){
+        firstSentence =true;
+
+    }
+    if(director.time>=19.85)
+    secondSentence = true;
+
+    if(director.time >=37.25)
+    thirdsentence = true;
+
 }
 }

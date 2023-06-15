@@ -5309,8 +5309,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 35.407097
-        y: 182.68436
+        x: 26.478523
+        y: 188.04147
         width: 160
         height: 30
     - id: 3

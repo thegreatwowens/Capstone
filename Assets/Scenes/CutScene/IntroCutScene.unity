@@ -559,8 +559,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In a not-too-distant future, technology has advanced to the point where
-    it''s integrated into every aspect of life. '
+  m_text: In the late 19th century, you were an inventive dreamer, envisioning a
+    world of technological wonders. Tragedy struck when a lightning bolt rendered
+    you comatose.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48d4297589cb8724cb2e82343a49eeee, type: 2}
   m_sharedMaterial: {fileID: -2476071160188331166, guid: 48d4297589cb8724cb2e82343a49eeee, type: 2}
@@ -569,7 +570,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1124073471
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -760,9 +761,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You were once a student studying IT, but you woke up from a long coma
-    to find yourself in a world you no longer recognize. You have no memory of the
-    time you've missed, but you know you have a knack for technology.\r"
+  m_text: A century later, medical breakthroughs revived you in a bewildering world
+    of glowing screens and handheld devices. Eager to catch up, you embarked on a
+    quest to unravel the mysteries of computers and the internet, immersing yourself
+    in books, conversations, and personal exploration.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48d4297589cb8724cb2e82343a49eeee, type: 2}
   m_sharedMaterial: {fileID: -2476071160188331166, guid: 48d4297589cb8724cb2e82343a49eeee, type: 2}
@@ -1072,11 +1074,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: As you start to explore this new world, you find yourself getting caught
-    up in all sorts of fun and exciting adventures. From coding  to discovering new
-    technologies, you'll find that your expertise in technology is an invaluable
-    asset. You'll also meet new people and make friends, who will help you discover
-    your past and the reason why you were in coma.
+  m_text: As you delved deeper into the realm of computers and technology, you marveled
+    at the incredible strides humanity had made during your slumber. From the early
+    calculating machines to the vast networks connecting people across the globe,
+    you absorbed the knowledge with awe and fascination.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48d4297589cb8724cb2e82343a49eeee, type: 2}
   m_sharedMaterial: {fileID: -2476071160188331166, guid: 48d4297589cb8724cb2e82343a49eeee, type: 2}
