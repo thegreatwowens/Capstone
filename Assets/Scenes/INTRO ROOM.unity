@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31204852, g: 0.39593065, b: 0.5223095, a: 1}
+  m_IndirectSpecularColor: {r: 0.31204855, g: 0.39593068, b: 0.5223095, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -550,7 +550,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Prelude
+  conversation: Hospital
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -573,7 +573,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 5b2248839b1daf54ab6310dcf4063a68, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 0cab4d2348988a14a9812f2ad4feea9e, type: 2}
 --- !u!65 &621140399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873990773}
   m_Layer: 0
-  m_Name: Spawn
+  m_Name: SpawnPoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1194,6 +1194,10 @@ PrefabInstance:
     - target: {fileID: 1005271832395811835, guid: 7b42df73bc444c04da36e4525169da4a, type: 3}
       propertyPath: m_Name
       value: PlayerManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005271832395811835, guid: 7b42df73bc444c04da36e4525169da4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7744510611327137447, guid: 7b42df73bc444c04da36e4525169da4a, type: 3}
       propertyPath: m_RootOrder
@@ -1484,6 +1488,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1758101671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1087.7463
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 463.8859
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3532677
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712501, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434260440221712502, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
+      propertyPath: m_Name
+      value: SaveSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e6f004f06c84bb42ad3555ba42d54d7, type: 3}
 --- !u!1 &1772647295
 GameObject:
   m_ObjectHideFlags: 0
@@ -10489,6 +10550,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6163357941915963767, guid: e9e61f3922b88bc459634654526df9d8, type: 3}
+--- !u!1001 &6770601120261516824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6770601120431734584, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_Name
+      value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.574278
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1533.6653
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1319.3658
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770601120431734586, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18d625ca4a3618a49ae0dc7cf7d32aa7, type: 3}
 --- !u!33 &6780155871406230709
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12752,7 +12870,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 0}
+  selectedDatabase: {fileID: 11400000, guid: 0cab4d2348988a14a9812f2ad4feea9e, type: 2}
 --- !u!114 &8210281123163724982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12766,11 +12884,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requiredTag: Player
-  m_destinationSceneName: Update City 1
-  m_spawnpointNameInDestinationScene: 
+  m_destinationSceneName: City
+  m_spawnpointNameInDestinationScene: SpawnerFromHospital
   m_onUsePortal:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8210281123163724985}
+        m_TargetAssemblyTypeName: NextSceneSaver, Assembly-CSharp
+        m_MethodName: NextSceneSave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &8210281123163724983
 BoxCollider:
   m_ObjectHideFlags: 0

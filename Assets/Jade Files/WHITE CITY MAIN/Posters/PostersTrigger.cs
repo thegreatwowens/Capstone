@@ -1,6 +1,6 @@
 
 using UnityEngine;
-[CreateAssetMenu(fileName = "TriviasCreator", menuName = "Posters/Contents/Trivia", order = 1)]
+[CreateAssetMenu(fileName = "Trivia", menuName = "Posters/Contents/Trivia", order = 1)]
 public class PostersTrigger : ScriptableObject
 
 {

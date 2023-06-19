@@ -1,21 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using QInventory;
+using PixelCrushers;
+using PixelCrushers.DialogueSystem;
+
 
 public class NextSceneSaver : MonoBehaviour
 {
-    private void Start()
-    {
-       
-    }
+    public bool saveSpawnSavedLocation;
 
-    public static void NextSceneSave()
+    public GameObject SpawnLocation;
+    public  void NextSceneSave()
     {
         InventoryManager.SaveInventoryData();
+        SaveSystem.SaveToSlotImmediate(1);
+      
+      if(saveSpawnSavedLocation){
+            SaveSystem.playerSpawnpoint = SpawnLocation;
+      }
     }
-    private void Update()
-    {
-        
-    }
+
 }

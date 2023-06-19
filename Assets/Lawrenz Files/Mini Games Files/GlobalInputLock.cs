@@ -3,8 +3,9 @@ using UnityEngine;
 using Invector.vCharacterController;
 using QInventory;
 using PixelCrushers.DialogueSystem;
+using PixelCrushers.DialogueSystem.SequencerCommands;
 
-public class GlobalInputLock : MonoBehaviour
+public class GlobalInputLock : Sequencer
 {
     public static GlobalInputLock Instance;
     [SerializeField]
@@ -20,10 +21,10 @@ public class GlobalInputLock : MonoBehaviour
         }
     }
 
-    private void Update()
+    private  new void Update()
     {
         
-        if(DialogueManager.Instance.isConversationActive && control.isActiveAndEnabled|| session)
+        if(DialogueManager.Instance.isConversationActive || isPlaying || session )
         {
             playerinput.SetLockAllInput(true);
           //  playerinput.SetLockCameraInput(true);
@@ -33,7 +34,7 @@ public class GlobalInputLock : MonoBehaviour
             
 
         }
-           else if (!DialogueManager.Instance.isConversationActive){
+           else if (!DialogueManager.Instance.isConversationActive || !isPlaying || !session){
                control.EnableInput();
                   playerinput.SetLockAllInput(false);
         }   else{

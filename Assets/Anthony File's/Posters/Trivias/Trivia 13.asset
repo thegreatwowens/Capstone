@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: Trivia 13
+  m_EditorClassIdentifier: 
+  _title: FORTRAN
+  _content: FORTRAN, short for "Formula Translation," was the first high-level programming
+    language. It was developed by IBM in the 1950s for scientific and engineering
+    calculations. FORTRAN made programming more accessible by using English-like
+    statements instead of machine code. Its introduction allowed programmers to write
+    code that was more readable and efficient, making it easier to develop complex
+    scientific applications. FORTRAN played a pivotal role in shaping the field of
+    computer programming and remains in use today, albeit in evolved versions.
+  _image: {fileID: 21300000, guid: d623736fcd8783a4798b98cc66636fed, type: 3}
+  canvasGroup: {fileID: 0}

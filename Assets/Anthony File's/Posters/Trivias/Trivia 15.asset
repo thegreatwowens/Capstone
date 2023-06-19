@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: Trivia 15
+  m_EditorClassIdentifier: 
+  _title: Alan Turing
+  _content: Alan Turing, a British mathematician, logician, and computer scientist,
+    is often hailed as the father of modern computer science. His pivotal role in
+    breaking the German Enigma code during World War II greatly influenced the Allied
+    victory and revolutionized cryptography. Turing's theoretical research on the
+    universal Turing machine laid the groundwork for modern computer architecture
+    and the concept of computation. Despite his significant contributions, Turing's
+    life was tragically cut short, and his work and legacy continue to inspire and
+    shape the field of computer science.
+  _image: {fileID: 21300000, guid: 6bddfc1d6621fb4479b322a0df38a3ae, type: 3}
+  canvasGroup: {fileID: 0}

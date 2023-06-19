@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: Trivia 14
+  m_EditorClassIdentifier: 
+  _title: First Iphone
+  _content: "\rThe iPhone, Apple's first smartphone, was introduced by Steve Jobs
+    on June 29, 2007. Its sleek design, touchscreen interface, and integration of
+    music, internet, and communication features revolutionized the smartphone industry.
+    The iPhone's introduction marked a significant milestone in the history of mobile
+    technology, setting new standards for design, functionality, and user experience.
+    It paved the way for Apple's continued success in the smartphone market and the
+    subsequent evolution of the iPhone series."
+  _image: {fileID: 21300000, guid: 6d327e16cc2ad844395e51ff6409222b, type: 3}
+  canvasGroup: {fileID: 0}
