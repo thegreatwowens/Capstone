@@ -21,6 +21,10 @@ namespace QInventory
             childPanel = transform.GetChild(0).gameObject;
             rectTransform = GetComponent<RectTransform>();
         }
+        void OnEnable()
+        {
+              rectTransform.anchoredPosition = UIPosition;
+        }
 
         private void Update()
         {
