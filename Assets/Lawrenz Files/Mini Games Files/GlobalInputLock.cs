@@ -3,7 +3,7 @@ using UnityEngine;
 using Invector.vCharacterController;
 using QInventory;
 using PixelCrushers.DialogueSystem;
-using PixelCrushers.DialogueSystem.SequencerCommands;
+using Lovatto.MiniMap;
 
 public class GlobalInputLock : Sequencer
 {
@@ -31,6 +31,7 @@ public class GlobalInputLock : Sequencer
           //  playerinput.SetLockBasicInput(true);
            // playerinput.SetLockCameraInput(true);
             control.DisableInputs();
+         
             
 
         }
@@ -48,10 +49,12 @@ public class GlobalInputLock : Sequencer
     {
             session = false;
             MouseSettingsInput.Instance.DisableMouseUI();
+            bl_MiniMap.ActiveMiniMap.enabled =true;
     }
     public void DisableAllPlayerInputMovement() {
         session = true;
         MouseSettingsInput.Instance.EnableMouseUI();
+        bl_MiniMap.ActiveMiniMap.enabled =false;
     }
 
 }
