@@ -32,8 +32,8 @@ RectTransform:
   m_Father: {fileID: 1268842288335017900}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -20.2, y: -0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5076,13 +5076,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5239,13 +5239,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5257,13 +5257,13 @@ MonoBehaviour:
           networkSync: 0
           value: 1
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5906,13 +5906,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -6009,32 +6009,32 @@ MonoBehaviour:
       floatVariables: []
       intVariables:
       - useVariable: 1
-        name: 
+        name: WeaponID
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       boolVariables:
       - useVariable: 1
-        name: 
+        name: isStrafing
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: 
+        name: CheckWeapon
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: 
+        name: ifFalse
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: 
+        name: is Grounded
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -38969,7 +38969,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
-  m_FillRect: {fileID: 0}
+  m_FillRect: {fileID: 4090126150518225430}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
@@ -40931,7 +40931,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -45135,7 +45135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7542438019395477663, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7542455241271236913, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: inventoryUIControls.Array.data[1].m_InventoryUI
@@ -45147,7 +45147,7 @@ PrefabInstance:
       objectReference: {fileID: 2844887999557054792}
     - target: {fileID: 7542872606732734579, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7578178416171753197, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_RootOrder
@@ -45504,6 +45504,14 @@ PrefabInstance:
     - target: {fileID: 6441461907495871169, guid: 8086e4b43b0fad34cbfb17925f2633a9, type: 3}
       propertyPath: m_Name
       value: Invector Components
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959163460780113079, guid: 8086e4b43b0fad34cbfb17925f2633a9, type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959163460780113079, guid: 8086e4b43b0fad34cbfb17925f2633a9, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8086e4b43b0fad34cbfb17925f2633a9, type: 3}
@@ -46117,7 +46125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4203653088641198302, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4203653088641199248, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_SizeDelta.y

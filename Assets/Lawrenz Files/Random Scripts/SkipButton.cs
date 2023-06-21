@@ -40,6 +40,10 @@ public void SkipButtonClicked(){
 }
 void Update()
 {
+    if(Input.anyKey)
+    {
+        SkipButtonClicked();
+    }
     if(director.time >=4.9){
         firstSentence =true;
 

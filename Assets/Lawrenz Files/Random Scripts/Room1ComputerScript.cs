@@ -98,7 +98,7 @@ namespace OwnCode
             if(AnsweredCount == 5)
             {
                 EndSession();
-                AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.WindowsExpert,+5);
+             //   AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.WindowsExpert,+5);
                 if (TaskCompleted != null)
                 {
                     TaskCompleted.Invoke();
