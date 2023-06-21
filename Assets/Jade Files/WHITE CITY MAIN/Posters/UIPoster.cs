@@ -52,9 +52,10 @@ namespace OwnCode.Choi
         public void UIHide()
         {
             panel.HidePanel();
-            SoundManager.Instance.PlaySoundFx("UIClick");
+
              MouseSettingsInput.Instance.DisableMouseUI();
              GlobalInputLock.Instance.EnableAllMovements();
+            SoundManager.Instance.PlaySoundFx("UIClick");
              
         }
     }

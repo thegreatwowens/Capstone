@@ -388,7 +388,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: '[Wakes up from bed]'
+        value: (Wakes up from bed)
         type: 0
         typeString: 
       - title: Video File
@@ -420,7 +420,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 31.03093
+        x: 31.06186
         y: 70
         width: 160
         height: 30
@@ -443,8 +443,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Easy now, [lua(Actor["Player"].Display_Name)]. You've been in a coma
-          for over a century. Take your time to adjust.
+        value: (gentle voice) [lua(Actor["Player"].Display_Name)], can you hear me?
+          You're finally waking up. You've been in a coma for quite some time.
         type: 0
         typeString: 
       - title: Video File
@@ -503,8 +503,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Blinking, trying to comprehend] A century? What... what year is
-          it?'
+        value: (groggily) Wha... Where am I? What happened?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -559,8 +558,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: ' It''s the year 2023, [lua(Actor["Player"].Display_Name)]. You''ve
-          been asleep for a long, long time.'
+        value: You were involved in an accident back in 1945, and you've been unconscious
+          ever since. But now, you're in the present day. A lot has changed.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -615,7 +614,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Wide-eyed] 2023? That''s... unimaginable.'
+        value: (bewildered) Present day? How long have I been out?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -670,9 +669,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Reassuringly] Indeed, it is. The world has changed in ways you can''t
-          even begin to comprehend. We have advanced technology, computers, the internet...
-          It''s an entirely new era.'
+        value: Almost eight decades, [lua(Actor["Player"].Display_Name)]. The world
+          around you has undergone remarkable transformations, especially in technology.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -700,7 +698,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 31
         y: 320
         width: 160
         height: 30
@@ -727,8 +725,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: ' [Looking around the room, taking in the modern medical equipment]
-          What is that in your hand?'
+        value: (trying to absorb the information) I... I don't even know where to
+          begin. It feels like I've missed so much.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -783,10 +781,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Smiling, holding up the smartphone] This,  [lua(Actor["Player"].Display_Name)],
-          is a smartphone. It''s a portable device that allows us to make calls,
-          send messages, access information, and even connect to the internet. It''s
-          a remarkable invention of our time.'
+        value: It's understandable. But don't worry, we're here to help you navigate
+          through the changes and catch up. Technology, particularly computers, has
+          become an integral part of our lives. It's time for you to rediscover and
+          understand this digital revolution.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -841,9 +839,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Wide-eyed with wonder] A device that fits in your hand and connects
-          to the world? Astonishing! The world truly has progressed in unimaginable
-          ways.'
+        value: (determined) I want to learn. I want to understand everything that
+          has happened. Where do I start?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -898,9 +895,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Enthusiastically] It certainly has, [lua(Actor["Player"].Display_Name)]. 
-          Now, I understand you may have many questions. What would you like to know
-          first?'
+        value: We have a companion for you, an advanced android named Navi. Navi
+          will assist you in your journey of adaptation and learning. Together, you'll
+          explore the origins, evolution, and impact of computers, bridging the gap
+          between your past and the present.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -928,7 +926,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 272.30746
+        x: 271.30746
         y: 185.38493
         width: 160
         height: 30
@@ -955,9 +953,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Thoughtfully] Well, Doctor, I would like to start by understanding
-          how people live their lives now. How has society evolved? How do they interact
-          with this new technology?'
+        value: (grateful) Thank you, Doctor. I'm ready to embrace this new chapter
+          and unravel the mysteries of the digital age.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1012,10 +1009,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[lua(Actor["Player"].Display_Name)]. To truly grasp the intricacies
-          of modern life, I have a suggestion. There''s an advanced droid named [lua(Actor["Navi"].Display_Name)]
-          who specializes in providing firsthand insights and experiences of the
-          current era. Meeting her might help you immerse yourself in this new world.'
+        value: Excellent,[lua(Actor["Player"].Display_Name)]. You're on the path
+          to a remarkable journey. Navi, your android companion, is eagerly awaiting
+          you in the city. She'll guide you through the vast changes and help you
+          navigate this new world of technology.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1070,7 +1067,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Curious] A droid? That''s fascinating. How can I find [lua(Actor["Navi"].Display_Name)]?'
+        value: Navi? An android companion? How will I find her?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1125,10 +1122,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[lua(Actor["Navi"].Display_Name)] is programmed to be at the nearby
-          technology convention center, where she interacts with humans and shares
-          her knowledge. I can arrange for you to meet her there. Consider it a quest,
-          a journey of discovery for you.'
+        value: Don't worry, [lua(Actor["Navi"].Display_Name)]. Navi will be waiting
+          for you outside the hospital. She'll assist you in getting acquainted with
+          the city, its advancements, and the wonders of computers. Consider her
+          your guide and mentor as you embark on this exciting adventure.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1146,7 +1143,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 14
         destinationConversationID: 1
-        destinationDialogueID: 15
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1160,7 +1157,7 @@ MonoBehaviour:
         y: 385.38495
         width: 160
         height: 30
-    - id: 15
+    - id: 18
       fields:
       - title: Title
         value: 
@@ -1183,11 +1180,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Eager] I''m ready for the quest, Doctor!'
+        value: (excited) That sounds incredible! I can't wait to meet Navi and see
+          what lies ahead.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: ShowAlert("Find Navi")
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -1202,21 +1200,19 @@ MonoBehaviour:
       userScript: 'SetQuestState("Prelude", "success");
 
         SetQuestState("Find
-        Navi", "active");
-
-        SaveSystem.SaveToSlotImmediate(1);'
+        Navi", "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 542.4106
-        y: 154.97256
+        x: 554.3075
+        y: 170.38495
         width: 160
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasZoom: 1
   - id: 2
     fields:
     - title: Title
@@ -1351,15 +1347,18 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Nervously] Excuse me, [lua(Actor["Navi"].Display_Name)]. I was told
-          you have a deep understanding of this modern age. Could you spare a moment
-          to help me understand it better?'
+        value: Navi, it's good to finally meet you. The doctor mentioned you would
+          be my guide. I'm eager to explore this new world of technology.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -1381,7 +1380,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55
+        x: 55.91745
         y: 84
         width: 160
         height: 30
@@ -1408,8 +1407,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[With a warm and melodic voice] Certainly, [lua(Actor["Player"].Display_Name)].
-          I am here to assist and share my knowledge. What would you like to know?'
+        value: Hello, [lua(Actor["Player"].Display_Name)]. I'm glad you're here.
+          As your guide, I'll help you navigate through the wonders of the digital
+          age. Are you ready for our adventure?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1464,10 +1464,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Curious and eager] I''ve just awakened from a century-long slumber,
-          and I want to comprehend how society and technology has evolved. How do
-          people communicate, learn, and interact with one another in this digital
-          age?'
+        value: (enthusiastically) Absolutely! I'm ready to immerse myself in this
+          journey. Where should we start?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1495,7 +1493,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55
+        x: 55.917435
         y: 219
         width: 160
         height: 30
@@ -1522,10 +1520,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[With a gentle smile] Ah, [lua(Actor["Player"].Display_Name)], you
-          have a remarkable journey ahead. Allow me to explain the wonders of the
-          internet, social networks, and the incredible advancements in communication
-          technology.'
+        value: Before we delve into the your journey, let's take a moment to explore
+          the city. There are valuable resources and information scattered around
+          that can enhance your understanding. I've heard that there are educational
+          posters placed in different locations.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1580,9 +1578,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Overwhelmed] ahh. so much information already. But I''m eager to
-          dive even deeper into understanding this era. Is there anything else you
-          can show me?'
+        value: (curious) Posters? That sounds interesting. What kind of information
+          can I find on them?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1610,8 +1607,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 326
-        y: 79.93617
+        x: 281.9633
+        y: 90.02792
         width: 160
         height: 30
     - id: 6
@@ -1637,12 +1634,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[Nodding] Of course, [lua(Actor["Player"].Display_Name)]. There''s
-          a fascinating aspect of this era that you might find interesting. Throughout
-          the city, there are informational posters that provide valuable insights
-          into various aspects of modern life. They cover topics like technology,
-          culture, history, and more. It''s like a visual guide to understanding
-          the world around us.'
+        value: These posters highlight key milestones in the history of computers,
+          influential figures, and significant technological advancements. They serve
+          as a visual representation of the progress we've made.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1670,8 +1664,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 325
-        y: 164
+        x: 311.23853
+        y: 162.16513
         width: 160
         height: 30
     - id: 7
@@ -1697,8 +1691,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: That sounds intriguing! How can I find these posters? Are they located
-          in specific places?
+        value: I'd love to see those posters. Where can we find them?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1753,9 +1746,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Indeed, they are strategically placed in public spaces, such as parks,
-          libraries, and cultural centers. They're designed to be easily accessible
-          and engage curious minds like yours. If you're up for the challenge?
+        value: Let's make it a quest, [lua(Actor["Player"].Display_Name)]. You will
+          search for the posters on your own, but I'll provide guidance along the
+          way. Each time you find a poster, it will provide you with valuable insights.
+          It's a fun way to engage with the city while learning about the history
+          of computers.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1783,8 +1778,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 561
-        y: 57
+        x: 555.6112
+        y: 113.2592
         width: 160
         height: 30
     - id: 9
@@ -1810,7 +1805,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What challenge?
+        value: (excited) I'm up for the challenge! I'll explore the city and find
+          those posters. I'm eager to uncover the stories they hold.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1838,8 +1834,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 561
-        y: 127
+        x: 559.06024
+        y: 172.36588
         width: 160
         height: 30
     - id: 10
@@ -1893,8 +1889,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 564
-        y: 199
+        x: 558.61115
+        y: 240.91678
         width: 160
         height: 30
     - id: 11
@@ -1948,8 +1944,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 617
-        y: 355
+        x: 559.71246
+        y: 429.8282
         width: 160
         height: 30
     - id: 12
@@ -2000,14 +1996,16 @@ MonoBehaviour:
       userScript: 'SetQuestState("Interact Posters", "grantable");
 
         SetQuestState("Interact
-        Posters", "active")'
+        Posters", "active");
+
+        UpdateQuestIndicators("Interact Posters")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 616
-        y: 421
+        x: 558.71246
+        y: 499.62564
         width: 160
         height: 30
     - id: 13
@@ -2061,14 +2059,16 @@ MonoBehaviour:
       userScript: 'SetQuestState("Interact Posters", "success");
 
         SetQuestEntryState("Interact
-        Posters", 2, "success")'
+        Posters", 2, "success")
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 977.25525
-        y: 29.829788
+        x: 1016.4957
+        y: 24.766495
         width: 160
         height: 30
     - id: 14
@@ -2124,8 +2124,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 991
-        y: 123
+        x: 1265.6833
+        y: 29.329147
         width: 160
         height: 30
     - id: 15
@@ -2181,8 +2181,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1023.65955
-        y: 257.48935
+        x: 1278.09
+        y: 139.76784
         width: 160
         height: 30
     - id: 16
@@ -2237,8 +2237,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 789.383
-        y: 61.59575
+        x: 836.55225
+        y: 102.35246
         width: 160
         height: 30
     - id: 17
@@ -2286,8 +2286,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 814.31915
-        y: 162.34042
+        x: 838.7036
+        y: 208.48038
         width: 160
         height: 30
     - id: 18
@@ -2341,8 +2341,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 619
-        y: 254
+        x: 554.1175
+        y: 308.575
         width: 160
         height: 30
     - id: 19
@@ -2396,8 +2396,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 620
-        y: 308
+        x: 555.11755
+        y: 370.16998
         width: 160
         height: 30
     - id: 20
@@ -2445,8 +2445,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 839.17017
-        y: 403.51062
+        x: 561.6295
+        y: 583.4022
         width: 160
         height: 30
     - id: 21
@@ -2494,13 +2494,21 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1073.6595
-        y: 324.51062
+        x: 1263.533
+        y: 227.04227
         width: 160
         height: 30
-    entryGroups: []
-    canvasScrollPosition: {x: 190.42554, y: 11.702118}
-    canvasZoom: 0.94000006
+    entryGroups:
+    - name: Group
+      rect:
+        serializedVersion: 2
+        x: 462.38535
+        y: 320.1835
+        width: 1
+        height: 1
+      color: {r: 1, g: 1, b: 1, a: 0.5}
+    canvasScrollPosition: {x: 26.27124, y: 95.32051}
+    canvasZoom: 1.1799998
   syncInfo:
     syncActors: 0
     syncItems: 0

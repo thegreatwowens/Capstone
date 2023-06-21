@@ -13,33 +13,9 @@ MonoBehaviour:
   m_Name: AchievementsData
   m_EditorClassIdentifier: 
   m_achievementsDone:
-  - item1: Hammer of Detroit City
-    item2: 0
-  - item1: Perfect Easy Quiz
-    item2: 0
-  - item1: Perfect Normal Quiz
-    item2: 0
-  - item1: Perfect Hard Quiz
-    item2: 0
-  - item1: Binary Master
-    item2: 0
-  - item1: Windows Installation Expert
-    item2: 0
-  - item1: Networking Expert
+  - item1: City Explorer
     item2: 0
   m_achievementsDataBool:
-  - item1: HammerOfDetroit
+  - item1: NONE
     item2: 0
-  - item1: EasyQuizComplete
-    item2: 0
-  - item1: NormalQuizComplete
-    item2: 0
-  - item1: HardQuizComplete
-    item2: 0
-  - item1: BinaryMastery
-    item2: 0
-  m_achievementsDataInt:
-  - item1: WindowsExpert
-    item2: 0
-  - item1: NetworkingExpert
-    item2: 0
+  m_achievementsDataInt: []

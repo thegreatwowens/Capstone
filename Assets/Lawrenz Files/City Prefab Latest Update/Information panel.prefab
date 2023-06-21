@@ -9338,8 +9338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e5058278418434fa2822a7a8c526ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioName: CompletedBinary
-  type: 3
 --- !u!1 &7285801068160705913
 GameObject:
   m_ObjectHideFlags: 0

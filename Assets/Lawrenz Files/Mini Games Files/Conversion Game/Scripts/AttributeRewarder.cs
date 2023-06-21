@@ -27,8 +27,8 @@ namespace DiZTools_AchievementsSystem {
                 }
 
             if (InventoryManager.GetPlayerAttributeCurrentValue("Binary Intelegence") == InventoryManager.GetPlayerAttributeMaxValue("Binary Intelegence"))
-            {   
-                achievementTrigger.BinaryMastery(); }
+            {    }
+           //     achievementTrigger.BinaryMastery();
 
 
 
