@@ -15,7 +15,11 @@ MonoBehaviour:
   m_achievementsDone:
   - item1: City Explorer
     item2: 0
+  - item1: Detroit Explored
+    item2: 0
   m_achievementsDataBool:
-  - item1: NONE
+  - item1: CityExplorer
+    item2: 0
+  - item1: DetroitHardware
     item2: 0
   m_achievementsDataInt: []

@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &4878197875726569693
 Transform:
@@ -124,7 +124,7 @@ GameObject:
   m_TagString: Trivia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &4878197875851582183
 Transform:
@@ -170,7 +170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d0ea482fd22cef4498a341360ded5de2, type: 2}
+  - {fileID: 2100000, guid: c3bc2e34f4e352048aaddea3bd2d26d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432101beb14ea1b479f4e0227454decb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poster: {fileID: 11400000, guid: 153d2efe33a135a42b58cb99ede50808, type: 2}
+  poster: {fileID: 11400000, guid: 760db89cf4153374f82157326a7526f8, type: 2}
   _title: {fileID: 0}
   _content: {fileID: 0}
   _image: {fileID: 0}
@@ -325,7 +325,12 @@ MonoBehaviour:
   trigger: 32
   condition:
     luaConditions: []
-    questConditions: []
+    questConditions:
+    - questName: Interact Posters
+      questState: 6
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
     acceptedTags: []
     acceptedGameObjects: []
     luaWizardIndex: -1

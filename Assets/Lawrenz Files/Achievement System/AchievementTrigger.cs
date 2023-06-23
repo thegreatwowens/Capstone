@@ -1,36 +1,32 @@
 using UnityEngine;
-using System.Collections.Generic;
-using QInventory;
+using PixelCrushers.DialogueSystem;
+using DiZTools_AchievementsSystem;
 
-namespace DiZTools_AchievementsSystem
-{
+
+
     public class AchievementTrigger : MonoBehaviour
     {
-        List<GameObject> achievementLocked;
-        /// <summary>
-        /// Start is called on the frame when a script is enabled just before
-        /// any of the Update methods is called the first time.
-        /// </summary>
-        void Start()
-        {
+        
+        public void AchievementDetroitExploration(){
 
-            if (InventoryManager.GetPlayerAttributeCurrentValue("Binary Intelegence") != 5)
-            {
-                achievementLocked[4].SetActive(false);
-            }
-
-            if (InventoryManager.GetPlayerAttributeCurrentValue("Windows Installation Expert") != 5)
-            {
-                achievementLocked[5].SetActive(false);
-            }
-
-            //AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.HammerOfDetroit, true);
-            //achievementLocked[0].SetActive(false);
-
+            AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.DetroitHardware, true);
         }
 
         public void CityExplorer(){
-            AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.CityExplorer,true);
+         AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.CityExplorer,true);
         }
+      void OnEnable()
+      {
+        Lua.RegisterFunction("DetroitExploration", this, SymbolExtensions.GetMethodInfo(() => AchievementDetroitExploration()));
+        Lua.RegisterFunction("CityExplorer", this, SymbolExtensions.GetMethodInfo(() => CityExplorer()));
+      }
+
+      void OnDisable()
+      {
+       Lua.UnregisterFunction("DetroitExploration");
+       Lua.UnregisterFunction("CityExplorer");
+      }
+
+
     }
-}
+
