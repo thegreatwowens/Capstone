@@ -223,6 +223,36 @@ MonoBehaviour:
       value: Return to navi
       type: 0
       typeString: 
+  - id: 4
+    fields:
+    - title: Name
+      value: 'Explore '
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations:
   - id: 1
     fields:
@@ -269,6 +299,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 2
+    fields:
+    - title: Name
+      value: CityExplorer
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -1211,7 +1255,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 23, y: 0}
     canvasZoom: 1
   - id: 2
     fields:
@@ -1834,7 +1878,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 559.06024
+        x: 559.9077
         y: 172.36588
         width: 160
         height: 30
@@ -1861,7 +1905,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Look for Poster's around the city!
+        value: That's the spirit, [lua(Actor["Player"].Display_Name)]! Take your
+          time to explore and learn from each poster you find. Once you're ready
+          to continue, come back to me, and we'll dive deeper into the world of computers.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1875,123 +1921,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 10
-        destinationConversationID: 2
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 558.61115
-        y: 240.91678
-        width: 160
-        height: 30
-    - id: 11
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: I'm ready for the challenge, [lua(Actor["Navi"].Display_Name)]!
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 11
-        destinationConversationID: 2
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 559.71246
-        y: 429.8282
-        width: 160
-        height: 30
-    - id: 12
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Great!
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 12
-        destinationConversationID: 2
-        destinationDialogueID: 20
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 'SetQuestState("Interact Posters", "grantable");
 
@@ -2004,8 +1934,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 558.71246
-        y: 499.62564
+        x: 528.3359
+        y: 289.54065
         width: 160
         height: 30
     - id: 13
@@ -2031,10 +1961,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I've learned so much from the posters throughout the city. Each one
-          provided valuable insights into different aspects of modern life. But I'm
-          still hungry for more knowledge. Is there another quest or place you can
-          show me to deepen my understanding of computers?
+        value: Navi, I've found several posters and learned so much about the history
+          of computers. It's fascinating how far we've come.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2059,16 +1987,16 @@ MonoBehaviour:
       userScript: 'SetQuestState("Interact Posters", "success");
 
         SetQuestEntryState("Interact
-        Posters", 2, "success")
+        Posters", 2, "success");
 
-'
+        Variable["CityExplorer"] = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1016.4957
-        y: 24.766495
+        x: 975.719
+        y: 29.620857
         width: 160
         height: 30
     - id: 14
@@ -2094,9 +2022,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Absolutely, [lua(Actor["Player"].Display_Name)]. Your thirst for
-          knowledge is admirable. There is a unique place called the "Tech Rooms"
-          located in the heart of the city. '
+        value: Well done, [lua(Actor["Player"].Display_Name)]! I knew you would immerse
+          yourself in the quest. The posters hold valuable insights, don't they?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2124,8 +2051,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1265.6833
-        y: 29.329147
+        x: 985.10095
+        y: 113.795166
         width: 160
         height: 30
     - id: 15
@@ -2139,11 +2066,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2151,9 +2078,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: It's a collection of rooms, each dedicated to a specific topic in
-          the world of computers. These rooms offer interactive experience, hands-on
-          activities, and expert guidance to enhance your understanding.
+        value: Absolutely! Each poster revealed a different aspect of the computer's
+          evolution and impact. I'm amazed at the ingenuity and progress humanity
+          has made.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2181,8 +2108,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1278.09
-        y: 139.76784
+        x: 951.8764
+        y: 198.0203
         width: 160
         height: 30
     - id: 16
@@ -2208,8 +2135,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hello! [lua(Actor["Player"].Display_Name)], have you completed your
-          challenge?
+        value: Hello! [lua(Actor["Player"].Display_Name)], how's exploring the city?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2237,8 +2163,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 836.55225
-        y: 102.35246
+        x: 816.3687
+        y: 74.82953
         width: 160
         height: 30
     - id: 17
@@ -2264,7 +2190,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I haven't yet!
+        value: It's been so Exciting! I'll comeback when I am ready!
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2286,167 +2212,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 838.7036
-        y: 208.48038
-        width: 160
-        height: 30
-    - id: 18
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: '[Confused] huh? you mean posters like a magazines? '
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 18
-        destinationConversationID: 2
-        destinationDialogueID: 19
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 554.1175
-        y: 308.575
-        width: 160
-        height: 30
-    - id: 19
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Yes! Posters
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 19
-        destinationConversationID: 2
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 555.11755
-        y: 370.16998
-        width: 160
-        height: 30
-    - id: 20
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 561.6295
-        y: 583.4022
+        x: 746.043
+        y: 219.48956
         width: 160
         height: 30
     - id: 21
@@ -2460,11 +2227,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2472,7 +2239,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Indeed, [lua(Actor["Player"].Display_Name)], The journey is just beginning.
+          We have more to explore and learn. Let's move forward and delve deeper
+          into the world of computers together.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2494,8 +2263,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1263.533
-        y: 227.04227
+        x: 877.1248
+        y: 333.8384
         width: 160
         height: 30
     entryGroups:
@@ -2507,8 +2276,8 @@ MonoBehaviour:
         width: 1
         height: 1
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 26.27124, y: 95.32051}
-    canvasZoom: 1.1799998
+    canvasScrollPosition: {x: 141.74762, y: 0}
+    canvasZoom: 1.03
   syncInfo:
     syncActors: 0
     syncItems: 0

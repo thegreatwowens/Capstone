@@ -223,6 +223,36 @@ MonoBehaviour:
       value: Return to navi
       type: 0
       typeString: 
+  - id: 4
+    fields:
+    - title: Name
+      value: 'Explore '
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations:
   - id: 1
     fields:
@@ -1225,7 +1255,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 23, y: 0}
     canvasZoom: 1
   - id: 2
     fields:
@@ -1965,8 +1995,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 995.13635
-        y: 30.591736
+        x: 975.719
+        y: 29.620857
         width: 160
         height: 30
     - id: 14
@@ -2021,8 +2051,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1008.40186
-        y: 100.20294
+        x: 985.10095
+        y: 113.795166
         width: 160
         height: 30
     - id: 15
@@ -2078,8 +2108,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1020.8085
-        y: 186.36981
+        x: 951.8764
+        y: 198.0203
         width: 160
         height: 30
     - id: 16
@@ -2233,8 +2263,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1014.01807
-        y: 271.70245
+        x: 877.1248
+        y: 333.8384
         width: 160
         height: 30
     entryGroups:
@@ -2246,7 +2276,7 @@ MonoBehaviour:
         width: 1
         height: 1
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 293.20392, y: 0}
+    canvasScrollPosition: {x: 141.74762, y: 0}
     canvasZoom: 1.03
   syncInfo:
     syncActors: 0
