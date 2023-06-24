@@ -15,6 +15,8 @@ using DiZTools_AchievementsSystem;
         public void CityExplorer(){
          AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.CityExplorer,true);
         }
+
+        
       void OnEnable()
       {
         Lua.RegisterFunction("DetroitExploration", this, SymbolExtensions.GetMethodInfo(() => AchievementDetroitExploration()));
