@@ -45384,7 +45384,7 @@ PrefabInstance:
       objectReference: {fileID: 2844887999557054792}
     - target: {fileID: 7542872606732734579, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7578178416171753197, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_RootOrder
@@ -45743,6 +45743,10 @@ PrefabInstance:
     - target: {fileID: 143893756760364837, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2405894586789640206, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2465090568761968062, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: onOpen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
