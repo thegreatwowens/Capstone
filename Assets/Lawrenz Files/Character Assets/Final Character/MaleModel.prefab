@@ -5152,13 +5152,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5315,13 +5315,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5333,13 +5333,13 @@ MonoBehaviour:
           networkSync: 0
           value: 1
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: isStrafing
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5982,13 +5982,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: is Grounded
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -6085,32 +6085,32 @@ MonoBehaviour:
       floatVariables: []
       intVariables:
       - useVariable: 1
-        name: 
+        name: WeaponID
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       boolVariables:
       - useVariable: 1
-        name: 
+        name: isStrafing
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: 
+        name: CheckWeapon
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: 
+        name: ifFalse
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
       - useVariable: 1
-        name: 
+        name: is Grounded
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -41076,7 +41076,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
