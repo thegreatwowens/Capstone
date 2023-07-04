@@ -40,7 +40,7 @@ public void SkipButtonClicked(){
 }
 void Update()
 {
-    if(Input.anyKey)
+    if(Input.GetKeyDown(KeyCode.Space))
     {
         SkipButtonClicked();
     }

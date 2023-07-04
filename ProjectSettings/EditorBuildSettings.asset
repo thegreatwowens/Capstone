@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 2c6e2a80bf57e6c4796741600c99e5f9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CharacterSelection.unity
     guid: f79bdc4e50812b540b084e3871158469
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: 0ad4bda939ed5de43921f267a305d60c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/INTRO ROOM.unity
     guid: 4c5804666a6d415448e7935dfb2c6fba
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/City.unity
     guid: ecbab96e9858d114887319b9e1df6d73
   - enabled: 1
@@ -29,16 +29,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Tutorial Map.unity
     guid: 62483f98f975d4d4bbe54f8f4b1c3602
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CutScene/IntroCutScene.unity
     guid: 022230521cd8f5c4cbf8f747af2ea178
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ROOM 1.unity
     guid: 4f50b2f828defb04896658ca7462ff18
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ROOM 2.unity
     guid: b3dbcc7c0c34bde4383dbfd4e2aa3121
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ROOM 3.unity
     guid: 8749b33493b237547a8ac6f0d4abc7e3
   m_configObjects:
