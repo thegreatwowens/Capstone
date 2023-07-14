@@ -20,7 +20,7 @@ ModelImporter:
     second: art_1
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 2
     materialLocation: 0

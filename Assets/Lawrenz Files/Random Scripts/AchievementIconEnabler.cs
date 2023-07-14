@@ -10,7 +10,7 @@ public class AchievementIconEnabler : MonoBehaviour
     private TextMeshProUGUI _Description;
     private Image image;
 
-    private void Awake()
+    private void OnEnable()
     {
         _AchievementName = panel.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         _Description = panel.transform.GetChild(1).GetComponent<TextMeshProUGUI>();

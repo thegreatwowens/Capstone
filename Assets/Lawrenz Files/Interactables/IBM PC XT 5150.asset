@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886f738ed9f6db54c9aac83fac610b22, type: 3}
+  m_Name: IBM PC XT 5150
+  m_EditorClassIdentifier: 
+  _title: IBM PC XT 5150
+  _content: The first microcomputer released in the IBM PC model line and the basis
+    for the IBM PC compatible de facto standard. Released on August 12, 1981, it
+    was created by a team of engineers and designers directed by Don Estridge in
+    Boca Raton, Florida.
+  _image: {fileID: 21300000, guid: 4c95a93c7e7d31e43beb465129cd24f2, type: 3}
+  canvasGroup: {fileID: 0}

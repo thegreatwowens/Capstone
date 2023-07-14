@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 626739665}
   - component: {fileID: 626739666}
   - component: {fileID: 626739667}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TimeCountdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 3504080649382250041}
   - component: {fileID: 3504080649382250043}
   - component: {fileID: 3504080649382250040}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 3504080649415001815}
   - component: {fileID: 3504080649415001809}
   - component: {fileID: 3504080649415001814}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 3504080649490592620}
   - component: {fileID: 3504080649490592622}
   - component: {fileID: 3504080649490592623}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 3504080649636117219}
   - component: {fileID: 3504080649636117229}
   - component: {fileID: 3504080649636117218}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Total
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 3504080649691673111}
   - component: {fileID: 3504080649691673105}
   - component: {fileID: 3504080649691673110}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 3504080649703051813}
   - component: {fileID: 3504080649703051834}
   - component: {fileID: 3504080649703051835}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Texteffects2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 3504080649741848564}
   - component: {fileID: 3504080649741848565}
   - component: {fileID: 3504080649741848522}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Warning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 3504080649814596485}
   - component: {fileID: 3504080649814596487}
   - component: {fileID: 3504080649814596484}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: _binary Equivalent TEXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 3504080649864714202}
   - component: {fileID: 3504080649864714203}
   - component: {fileID: 3504080649864714200}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1191,7 @@ GameObject:
   - component: {fileID: 3504080649883675104}
   - component: {fileID: 3504080649883675106}
   - component: {fileID: 3504080649883675107}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1267,7 +1267,7 @@ GameObject:
   - component: {fileID: 3504080649961826142}
   - component: {fileID: 3504080649961826136}
   - component: {fileID: 3504080649961826137}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Caution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 3504080650009577505}
   - component: {fileID: 3504080650009577507}
   - component: {fileID: 3504080650009577504}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Binary Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 3504080650051133242}
   - component: {fileID: 3504080650051133220}
   - component: {fileID: 3504080650051133221}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1625,7 +1625,7 @@ GameObject:
   - component: {fileID: 3504080650057483070}
   - component: {fileID: 3504080650057483064}
   - component: {fileID: 3504080650057483065}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 3504080650102796636}
   - component: {fileID: 3504080650102796638}
   - component: {fileID: 3504080650102796639}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Equals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1836,7 +1836,7 @@ GameObject:
   - component: {fileID: 3504080650103727785}
   - component: {fileID: 3504080650103727787}
   - component: {fileID: 3504080650103727784}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1971,7 +1971,7 @@ GameObject:
   - component: {fileID: 3504080650124810512}
   - component: {fileID: 3504080650124810514}
   - component: {fileID: 3504080650124810515}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2106,7 +2106,7 @@ GameObject:
   - component: {fileID: 3504080650147042402}
   - component: {fileID: 3504080650147042412}
   - component: {fileID: 3504080650147042413}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2412,7 +2412,7 @@ GameObject:
   - component: {fileID: 3504080650220995596}
   - component: {fileID: 3504080650220995598}
   - component: {fileID: 3504080650220995599}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2489,7 +2489,7 @@ GameObject:
   - component: {fileID: 3504080650222491303}
   - component: {fileID: 3504080650222491300}
   - component: {fileID: 218868200}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2603,7 +2603,7 @@ GameObject:
   - component: {fileID: 3504080650256212776}
   - component: {fileID: 3504080650256212778}
   - component: {fileID: 3504080650256212779}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2680,7 +2680,7 @@ GameObject:
   - component: {fileID: 3504080650269028023}
   - component: {fileID: 3504080650269028017}
   - component: {fileID: 3504080650269028022}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2756,7 +2756,7 @@ GameObject:
   - component: {fileID: 3504080650273198738}
   - component: {fileID: 3504080650273198748}
   - component: {fileID: 3504080650273198749}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2891,7 +2891,7 @@ GameObject:
   - component: {fileID: 3504080650277540648}
   - component: {fileID: 3504080650277540650}
   - component: {fileID: 3504080650277540651}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,13 +2967,13 @@ GameObject:
   - component: {fileID: 3504080650277602655}
   - component: {fileID: 3504080650277602649}
   - component: {fileID: 3504080650277602654}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Door is Locked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3504080650277602655
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3023,7 +3023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DOOR IS LOCKED!
+  m_text: SOLVED
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5e63b0ba2df2d3b4da07b43777d59820, type: 2}
   m_sharedMaterial: {fileID: -4843924653892332893, guid: 5e63b0ba2df2d3b4da07b43777d59820, type: 2}
@@ -3102,7 +3102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080650290078269}
   - component: {fileID: 3504080650290078268}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3152,7 +3152,7 @@ GameObject:
   - component: {fileID: 3504080650330132047}
   - component: {fileID: 3504080650330132044}
   - component: {fileID: 3504080650330132045}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InsidePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3246,7 +3246,7 @@ GameObject:
   - component: {fileID: 3504080650396038495}
   - component: {fileID: 3504080650396038489}
   - component: {fileID: 3504080650396038494}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3322,7 +3322,7 @@ GameObject:
   - component: {fileID: 3504080650400362664}
   - component: {fileID: 3504080650400362666}
   - component: {fileID: 3504080650400362667}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3457,7 +3457,7 @@ GameObject:
   - component: {fileID: 3504080650469135342}
   - component: {fileID: 3504080650469135336}
   - component: {fileID: 3504080650469135337}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3533,7 +3533,7 @@ GameObject:
   - component: {fileID: 3504080650486988392}
   - component: {fileID: 3504080650486988394}
   - component: {fileID: 3504080650486988395}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3668,7 +3668,7 @@ GameObject:
   - component: {fileID: 3504080650504005281}
   - component: {fileID: 3504080650504005283}
   - component: {fileID: 3504080650504005280}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3803,7 +3803,7 @@ GameObject:
   - component: {fileID: 3504080650539437400}
   - component: {fileID: 3504080650539437402}
   - component: {fileID: 3504080650539437403}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3937,7 +3937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080650550246238}
   - component: {fileID: 3504080650550246233}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3986,7 +3986,7 @@ GameObject:
   - component: {fileID: 3504080650559884629}
   - component: {fileID: 3504080650559884631}
   - component: {fileID: 3504080650559884628}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Total
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4121,7 +4121,7 @@ GameObject:
   - component: {fileID: 3504080650568481313}
   - component: {fileID: 3504080650568481314}
   - component: {fileID: 3504080650568481315}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4199,7 +4199,7 @@ GameObject:
   - component: {fileID: 3504080650589410804}
   - component: {fileID: 3504080650589410806}
   - component: {fileID: 3504080650589410807}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4334,7 +4334,7 @@ GameObject:
   - component: {fileID: 3504080650591029363}
   - component: {fileID: 3504080650591029373}
   - component: {fileID: 3504080650591029362}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4410,7 +4410,7 @@ GameObject:
   - component: {fileID: 3504080650591345888}
   - component: {fileID: 3504080650591345890}
   - component: {fileID: 3504080650591345891}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4486,7 +4486,7 @@ GameObject:
   - component: {fileID: 3504080650633753011}
   - component: {fileID: 3504080650633753021}
   - component: {fileID: 3504080650633753010}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4621,7 +4621,7 @@ GameObject:
   - component: {fileID: 3504080650680283431}
   - component: {fileID: 3504080650680283425}
   - component: {fileID: 3504080650680283430}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4756,7 +4756,7 @@ GameObject:
   - component: {fileID: 3504080650682353224}
   - component: {fileID: 3504080650682353226}
   - component: {fileID: 3504080650682353227}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Convert This Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 3504080650702839484}
   - component: {fileID: 3504080650702839486}
   - component: {fileID: 3504080650702839487}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4968,7 +4968,7 @@ GameObject:
   - component: {fileID: 3504080650725349954}
   - component: {fileID: 3504080650725349964}
   - component: {fileID: 3504080650725349965}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Total
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5044,7 +5044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080650745842286}
   - component: {fileID: 3504080650745842281}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5094,8 +5094,8 @@ GameObject:
   - component: {fileID: 3504080650749633940}
   - component: {fileID: 3504080650749633941}
   - component: {fileID: 3504080650749633943}
-  - component: {fileID: 8427557857056841929}
-  m_Layer: 0
+  - component: {fileID: 809169469}
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5175,7 +5175,7 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &8427557857056841929
+--- !u!114 &809169469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5184,10 +5184,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3504080650749633899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d30126fd0c943b744ba68549a61223a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 297adbfe43263404cadba60e0597f884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 3504080650749633943}
+  Canvaspanel: {fileID: 0}
+  fadeInSpeed: 2
+  OnFinishedOpened:
+    m_PersistentCalls:
+      m_Calls: []
+  fadeOutSpeed: 3
+  OnFinishedFade:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3504080650766475948
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,7 +5206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080650766475951}
   - component: {fileID: 3504080650766475950}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5247,7 +5255,7 @@ GameObject:
   - component: {fileID: 3504080650795599785}
   - component: {fileID: 3504080650795599787}
   - component: {fileID: 3504080650795599784}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5383,7 +5391,7 @@ GameObject:
   - component: {fileID: 3504080650797753332}
   - component: {fileID: 3504080650797753333}
   - component: {fileID: 3504080650797753290}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5431,7 +5439,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 430
+  m_SortingOrder: 999
   m_TargetDisplay: 0
 --- !u!114 &3504080650797753333
 MonoBehaviour:
@@ -5484,7 +5492,7 @@ GameObject:
   - component: {fileID: 3504080650805903366}
   - component: {fileID: 3504080650805903360}
   - component: {fileID: 3504080650805903361}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5619,7 +5627,7 @@ GameObject:
   - component: {fileID: 3504080650841571748}
   - component: {fileID: 3504080650841571750}
   - component: {fileID: 3504080650841571751}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5754,7 +5762,7 @@ GameObject:
   - component: {fileID: 3504080650876502721}
   - component: {fileID: 3504080650876502723}
   - component: {fileID: 3504080650876502720}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5829,7 +5837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080650913891741}
   - component: {fileID: 3504080650913891740}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5878,7 +5886,7 @@ GameObject:
   - component: {fileID: 3504080650918663118}
   - component: {fileID: 3504080650918663112}
   - component: {fileID: 3504080650918663113}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6013,7 +6021,7 @@ GameObject:
   - component: {fileID: 3504080650918722302}
   - component: {fileID: 3504080650918722296}
   - component: {fileID: 3504080650918722297}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6148,7 +6156,7 @@ GameObject:
   - component: {fileID: 3504080650920908062}
   - component: {fileID: 3504080650920908056}
   - component: {fileID: 3504080650920908057}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6223,7 +6231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080650949875981}
   - component: {fileID: 3504080650949875980}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6273,7 +6281,7 @@ GameObject:
   - component: {fileID: 3504080650971213430}
   - component: {fileID: 3504080650971213431}
   - component: {fileID: 721964472}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 128
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6387,7 +6395,7 @@ GameObject:
   - component: {fileID: 3504080650983324819}
   - component: {fileID: 3504080650983324829}
   - component: {fileID: 3504080650983324818}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalentUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6523,7 +6531,7 @@ GameObject:
   - component: {fileID: 3504080651006943299}
   - component: {fileID: 3504080651006943296}
   - component: {fileID: 1666086314}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6636,7 +6644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080651080867628}
   - component: {fileID: 3504080651080867631}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6685,7 +6693,7 @@ GameObject:
   - component: {fileID: 3504080651080927279}
   - component: {fileID: 3504080651080927273}
   - component: {fileID: 3504080651080927278}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6762,7 +6770,7 @@ GameObject:
   - component: {fileID: 3504080651099637115}
   - component: {fileID: 3504080651099637112}
   - component: {fileID: 1345742541}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6877,7 +6885,7 @@ GameObject:
   - component: {fileID: 3504080651101434348}
   - component: {fileID: 3504080651101434349}
   - component: {fileID: 471183836}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6991,7 +6999,7 @@ GameObject:
   - component: {fileID: 3504080651116342710}
   - component: {fileID: 3504080651116342704}
   - component: {fileID: 3504080651116342705}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7126,7 +7134,7 @@ GameObject:
   - component: {fileID: 3504080651173062373}
   - component: {fileID: 3504080651173062375}
   - component: {fileID: 3504080651173062372}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7262,7 +7270,7 @@ GameObject:
   - component: {fileID: 3504080651173876327}
   - component: {fileID: 3504080651173876326}
   - component: {fileID: 3504080651173876321}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7375,7 +7383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504080651181860351}
   - component: {fileID: 3504080651181860350}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7424,7 +7432,7 @@ GameObject:
   - component: {fileID: 3504080651206371659}
   - component: {fileID: 3504080651206371701}
   - component: {fileID: 3504080651206371658}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7500,7 +7508,7 @@ GameObject:
   - component: {fileID: 3504080651318743957}
   - component: {fileID: 3504080651318743959}
   - component: {fileID: 3504080651318743956}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7581,7 +7589,7 @@ GameObject:
   - component: {fileID: 3504080651354146310}
   - component: {fileID: 3504080651354146304}
   - component: {fileID: 3504080651354146305}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7716,7 +7724,7 @@ GameObject:
   - component: {fileID: 3504080651369009761}
   - component: {fileID: 3504080651369009763}
   - component: {fileID: 3504080651369009760}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BinaryEquivalent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7882,7 +7890,7 @@ GameObject:
   - component: {fileID: 3504080651433797746}
   - component: {fileID: 3504080651433797756}
   - component: {fileID: 3504080651433797757}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Unchecked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7959,7 +7967,7 @@ GameObject:
   - component: {fileID: 3504080651437497432}
   - component: {fileID: 3504080651437497433}
   - component: {fileID: 3504080651437497438}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextEffects1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8087,7 +8095,7 @@ GameObject:
   - component: {fileID: 3504080651444984420}
   - component: {fileID: 3504080651444984421}
   - component: {fileID: 1542293479}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8201,7 +8209,7 @@ GameObject:
   - component: {fileID: 3504080651448013547}
   - component: {fileID: 3504080651448016149}
   - component: {fileID: 3504080651448013546}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Instruction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8225,7 +8233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: 92}
+  m_AnchoredPosition: {x: -21, y: 165}
   m_SizeDelta: {x: 708.1, y: 113.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3504080651448016149
@@ -8258,7 +8266,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Instruction:
 
-    Solve the Problem to Unlock Door.'
+    Convert decimal to binary click to add'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5e63b0ba2df2d3b4da07b43777d59820, type: 2}
   m_sharedMaterial: {fileID: -4843924653892332893, guid: 5e63b0ba2df2d3b4da07b43777d59820, type: 2}
@@ -8339,7 +8347,7 @@ GameObject:
   - component: {fileID: 3504080651463392758}
   - component: {fileID: 3504080651463392759}
   - component: {fileID: 1060476777}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toggle 64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8453,7 +8461,7 @@ GameObject:
   - component: {fileID: 3504080651466180061}
   - component: {fileID: 3504080651466180063}
   - component: {fileID: 3504080651466180060}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8588,7 +8596,7 @@ GameObject:
   - component: {fileID: 3504080651474823857}
   - component: {fileID: 3504080651474823859}
   - component: {fileID: 3504080651474823856}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8768,9 +8776,7 @@ GameObject:
   - component: {fileID: 9155010514755358935}
   - component: {fileID: 1243160116812998479}
   - component: {fileID: 6558091133038406524}
-  - component: {fileID: 1103658385}
-  - component: {fileID: 1103658386}
-  - component: {fileID: 2221161490863745336}
+  - component: {fileID: 2125494555}
   m_Layer: 0
   m_Name: Information panel
   m_TagString: Computer
@@ -9236,7 +9242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 1
   stopTime: 0
-  gamepanel: {fileID: 0}
+  gamepanel: {fileID: 809169469}
   TargetValue: {fileID: 3504080649636117218}
   calculator: {fileID: 1243160116812998479}
   UItimer: {fileID: 626739667}
@@ -9256,7 +9262,19 @@ MonoBehaviour:
   OnCompleteTask:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1103658385}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DoorNotification, Assembly-CSharp
+        m_MethodName: OnComplete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AttributeRewarder, Assembly-CSharp
         m_MethodName: RewardPlayerFromConversion
         m_Mode: 1
@@ -9301,7 +9319,7 @@ MonoBehaviour:
   WeaponIsEquipped:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1103658385
+--- !u!114 &2125494555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9310,34 +9328,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 6993210145914698816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a48fb418d3414544597b13dd9e102d95, type: 3}
+  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1103658386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6993210145914698816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d765b4bd784b0e64b9b1975f2da4114f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  expValue: 5
---- !u!114 &2221161490863745336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6993210145914698816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e5058278418434fa2822a7a8c526ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  overrideName: Binary Computer
+  overrideUseMessage: to interact
+  maxUseDistance: 5
+  events:
+    onSelect:
+      m_PersistentCalls:
+        m_Calls: []
+    onDeselect:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2125494555}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    onUse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2125494555}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7285801068160705913
 GameObject:
   m_ObjectHideFlags: 0

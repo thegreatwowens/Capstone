@@ -2,21 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using OwnCode.Choi;
+using OwnCode;
 public class PosterUICaller : MonoBehaviour
 {
     [SerializeField]
     UIPoster poster;
 
-
-    
-    private void Awake()
+   
+    void Update()
     {
-        poster = GameObject.Find("Trivia").GetComponent<UIPoster>();
-
-    }
-    private void Start()
-    {
-
+        poster = GameObject.FindObjectOfType<UIPoster>();
     }
     public void Clicked()
     {

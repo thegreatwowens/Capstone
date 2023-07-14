@@ -20,3 +20,18 @@ MonoBehaviour:
   - functionName: Achievements/CityExplorer
     parameters: 
     returnValue: 0
+  - functionName: Achievements/BinaryInteract
+    parameters: 
+    returnValue: 0
+  - functionName: Achievements/MainHardwareUnlock
+    parameters: 
+    returnValue: 0
+  - functionName: Achievements/EasyQuiz
+    parameters: 
+    returnValue: 0
+  - functionName: Achievements/MeduimQuiz
+    parameters: 
+    returnValue: 0
+  - functionName: Achievements/HardQuiz
+    parameters: 
+    returnValue: 0

@@ -17,9 +17,13 @@ MonoBehaviour:
     item2: 0
   - item1: Detroit Explored
     item2: 0
+  - item1: Quiz Master Easy
+    item2: 0
   m_achievementsDataBool:
   - item1: CityExplorer
     item2: 0
   - item1: DetroitHardware
+    item2: 0
+  - item1: NONE
     item2: 0
   m_achievementsDataInt: []

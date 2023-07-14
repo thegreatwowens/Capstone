@@ -34,6 +34,7 @@ namespace OwnCode
         public void HidePanel()
         {
             closePanel = true;
+           
         }
         private void Update()
         {

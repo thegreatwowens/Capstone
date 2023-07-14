@@ -559,7 +559,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &2048094740002887662
 MonoBehaviour:
@@ -909,7 +909,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048094740530083600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1822.331}
+  m_LocalPosition: {x: 0, y: 0, z: 1822.3291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -918,7 +918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 219.45451, y: -1421.7196}
+  m_AnchoredPosition: {x: 219.45451, y: -1421.7181}
   m_SizeDelta: {x: 6736.706, y: 6731.3975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2048094740530083630
@@ -1151,7 +1151,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.058823526, g: 0.058823526, b: 0.058823526, a: 0.28627452}
+  m_BackGroundColor: {r: 0, g: 0.46294403, b: 1, a: 0.28627452}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1428,7 +1428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: -21}
+  m_AnchoredPosition: {x: -34.1, y: -11}
   m_SizeDelta: {x: 142, y: 142}
   m_Pivot: {x: 1, y: 1}
 --- !u!225 &2048094741470708238
