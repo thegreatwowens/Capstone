@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuizDifficultyReader : MonoBehaviour
 {
     [SerializeField]
-    QuizManager1 manager;
+    QuizManager manager;
     public Quizdificulty difficulty;
 
 

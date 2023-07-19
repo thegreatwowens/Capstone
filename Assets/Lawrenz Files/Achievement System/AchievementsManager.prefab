@@ -81,7 +81,7 @@ MonoBehaviour:
   m_achievementAnimator: {fileID: 2059714778357300523}
   m_achievementsDataSO: {fileID: 11400000, guid: 869049e41226728458be9c15e3f41722, type: 2}
   m_achievements: {fileID: 11400000, guid: 349082ec465438849809f1d0f8dd6a6e, type: 2}
-  m_timeBetweenSave: 60
+  m_timeBetweenSave: 10
 --- !u!1001 &2966423198553785724
 PrefabInstance:
   m_ObjectHideFlags: 0

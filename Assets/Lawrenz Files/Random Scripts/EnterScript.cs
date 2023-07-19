@@ -8,7 +8,7 @@ using TMPro;
 public class EnterScript : MonoBehaviour
 {
     [SerializeField]
-    QuizManager1 manager;
+    QuizManager manager;
     KeyCode key = KeyCode.Return;
     [SerializeField]
     TMP_InputField inputField;

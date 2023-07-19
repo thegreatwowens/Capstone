@@ -1010,7 +1010,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7432049067544169927}
   - component: {fileID: 4019176778582821237}
-  - component: {fileID: 7824099422320811160}
   m_Layer: 5
   m_Name: Objects
   m_TagString: Untagged
@@ -1043,7 +1042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.1768, y: 10.127014}
+  m_AnchoredPosition: {x: 5.1768, y: 150.1955}
   m_SizeDelta: {x: 1118.4, y: 699.0795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4019176778582821237
@@ -1070,31 +1069,6 @@ MonoBehaviour:
   m_Spacing: {x: 12.4, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!114 &7824099422320811160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839777894958680567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1454565ddde5b249a054545a05b51bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_key: 
-  m_appendSaverTypeToKey: 0
-  m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 0
-  m_gameObjectsToWatch:
-  - {fileID: 607080838602009845}
-  - {fileID: 4757535330185927841}
-  - {fileID: 4423365984033175449}
-  - {fileID: 3037721690320780461}
-  - {fileID: 1207498823071026867}
-  - {fileID: 5850660028604005777}
-  - {fileID: 8491620072619268166}
-  - {fileID: 0}
 --- !u!1 &1015509628957542453
 GameObject:
   m_ObjectHideFlags: 0
@@ -6481,7 +6455,7 @@ GameObject:
   - component: {fileID: 5723137401448208794}
   - component: {fileID: 7008291445469615775}
   m_Layer: 5
-  m_Name: Windows Installation
+  m_Name: Unlocks Detroit's Main Hardware
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6952,7 +6926,7 @@ GameObject:
   - component: {fileID: 790133070395862295}
   - component: {fileID: 7506212288776030490}
   m_Layer: 5
-  m_Name: Networking Expert
+  m_Name: Binary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8619,7 +8593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -87, y: 0}
+  m_AnchoredPosition: {x: -87, y: 0.000030517578}
   m_SizeDelta: {x: 320, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542458241071103475
@@ -10230,7 +10204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -22.5, y: -0.000015258789}
+  m_AnchoredPosition: {x: -22.5, y: 0.000045776367}
   m_SizeDelta: {x: 320, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542555598130117141
@@ -13454,7 +13428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -4.3892, y: 0.000015258789}
+  m_AnchoredPosition: {x: -4.3892, y: 0.000061035156}
   m_SizeDelta: {x: 395.05, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542937537912411103
@@ -15692,7 +15666,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7542840604383802223}
   m_HandleRect: {fileID: 7649053416052622023}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -15819,7 +15793,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7542478746341273885}
   m_HandleRect: {fileID: 7649050238684583277}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17907,7 +17881,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5148194457882371530}
   m_HandleRect: {fileID: 1108173026219200614}
   m_Direction: 2
-  m_Value: 0.46999994
+  m_Value: 0.05506501
   m_Size: 0.5171259
   m_NumberOfSteps: 0
   m_OnValueChanged:

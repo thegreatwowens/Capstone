@@ -6,7 +6,7 @@ public class UIQuizUpdater : MonoBehaviour
 {
 
     [SerializeField]
-    QuizManager1 manager;
+    QuizManager manager;
     [Header("Panels")]
     float uiSpeed =.5f;
     [SerializeField]

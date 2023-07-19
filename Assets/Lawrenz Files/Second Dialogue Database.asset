@@ -4498,7 +4498,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: Camera(QuizMaster,3);
+        value: Camera(DoorUnlockCamera,3);
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 41aa4605-f200-4b33-b272-de31f5dd31b9
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -4518,8 +4522,10 @@ MonoBehaviour:
       conditionsString: CurrentQuestState("Droid Doctor") == "grantable"
       userScript: 'SetQuestState("Droid Doctor", "active");
 
-        SetQuestState("Talk
-        again to Navi", "success")'
+        Variable["CanGoInsideHardwareRoom"]
+        = true;
+
+        SetQuestState("Talk again to Navi", "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4810,7 +4816,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 508
-        y: 323
+        y: 324.06384
         width: 160
         height: 30
     - id: 21
@@ -4971,10 +4977,8 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'SetQuestState("Droid Doctor", "success");
 
-        Variable["CanGoInsideHardwareRoom"]
-        = true;
-
-        SetQuestState("Take a Test on Droid Doctor", "active")'
+        SetQuestState("Take
+        a Test on Droid Doctor", "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5037,8 +5041,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 811.3404
-        y: 74.25531
+        x: 791.1276
+        y: 92.34041
         width: 160
         height: 30
     - id: 25
@@ -5895,8 +5899,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.8800001
+    canvasScrollPosition: {x: 89.78255, y: 55.72454}
+    canvasZoom: 0.94000006
   - id: 4
     fields:
     - title: Title

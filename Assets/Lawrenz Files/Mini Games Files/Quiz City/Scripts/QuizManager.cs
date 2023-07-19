@@ -1,328 +1,195 @@
-using Invector.vCharacterController;
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using Random = UnityEngine.Random;
 using PixelCrushers.DialogueSystem;
 using PixelCrushers.DialogueSystem.SequencerCommands;
 using UnityEngine.Events;
-using Invector.vCharacterController.vActions;
+using System.Collections;
 
+public enum Quizdificulty
+{
+
+    easy,
+    medium,
+    hard
+
+}
 public class QuizManager : SequencerCommandDelay
 {
     [SerializeField]
-    private string currentQuestionDebug;
+    Usable usable;
     [SerializeField]
-    private string currentAnswerDebug;
-    [SerializeField]
-    private string debugScore;
-    [SerializeField]
-    DoorNotification restrict;
-    [Header("Refrences")]
-    [SerializeField]
-    vTriggerGenericAction vGenericAction;
-    [SerializeField]
-     ConversionGamePanel panel;
-    [SerializeField]
-    TextMeshProUGUI questionField;
-    [SerializeField]
-    TextMeshProUGUI timerFeed;
-    [SerializeField]
-    TMP_InputField answerfield;
-    [SerializeField]
-    DialogueSystemTrigger trigger;
-    [SerializeField]
-    TextMeshProUGUI questionsLeft;
-    [SerializeField]
-    ConversionGamePanel mainPanel;
-    [SerializeField]
-    QuizEnabler quizEnabler;
-    [SerializeField]
-    GlobalInputLock globallock;
-    public bool session;
-    [Space]
-    [Header("Available Questions")]
-    [SerializeField]
-    List<QuestionGenerated> questions = new List<QuestionGenerated>();
-    [Header("Questions That are available at Runtime")]
-    #region List of Question per Difficulty
-    [SerializeField]
-    List<QuestionGenerated> givenQuestions = new List<QuestionGenerated>();
-    [Header("Event Callers")]
-    public UnityEvent onCorrect;
-    public UnityEvent onWrong;
-    public UnityEvent onExit;
-    public UnityEvent onCompleted;
-    public UnityEvent onTimesUp;
-    [SerializeField]
-    MouseSettingsInput mouse;
-    #endregion
-    #region Private Variables
-    int selection { get; set; }
+    UIQuizUpdater uIUpdater;
+    public List<QuizItem> quizItems;
+    public List<int> remainingQuestionIndices;
+    private QuizItem currentQuizItem;
 
-    int currentQuestioncount { get; set; }
-    int easy = 10;
-    int normal = 20;
-    int hard = 30;
-    int questiontotal { get; set; }
-    float timeMinutes;
-    float timeSeconds;
-    float settime = 0;
-    string endtype { get; set; }
-    int questionCountHolder { get; set; }
-    string currentAnswer { get; set; }
-    string currentQuestion { get; set; }
-    int scorecount { get; set; }
-    string currentDifficulty { get; set; }
-    int resultqeustion;
-    [SerializeField]
-    private bool onquestion;
-    List<int> randomInts = new List<int>();
-    vThirdPersonInput _character;
+    int _questionsCount { get; set; }
     
+    [HideInInspector]
+    public int Score {get; set;}
+    
+    public UnityEvent onGameFinished;
+    public UnityEvent onTimesUp;
 
-    #endregion
+    private Quizdificulty currentdifficulty;
 
-
-    private  new void  Start()
+    public void GameInitialized()
     {
-
-        
-    }
-
-    IEnumerator randomizer()
-    {
-        Debug.Log(CurrentQuestion());
-        yield return new WaitForEndOfFrame();
-        StopCoroutine(randomizer());
+        uIUpdater.GameInit();
+        GlobalInputLock.Instance.DisableAllPlayerInputMovement();
+        usable.enabled = false;
 
     }
-    private new void Update()
+    public void GameStart()
     {
-        _character = GameObject.FindGameObjectWithTag("Player").GetComponent<vThirdPersonInput>();
+        Score = 0;
+        FirstSetQuestion();
+        uIUpdater.StartGame();
+      
 
-        if (session)
+    }
+    
+    public int Getdifficulty()
+    {
+        int value = 0;
+        if (currentdifficulty == Quizdificulty.easy)
+            value = 5;
+        else if (currentdifficulty == Quizdificulty.medium)
+            value = 10;
+        else if (currentdifficulty == Quizdificulty.hard)
+            value = 15;
+
+        return value;
+    }
+    public void difficultySet(Quizdificulty difficulty)
+    {
+        if (difficulty == Quizdificulty.easy)
         {
-            settime -= Time.deltaTime;
-            trigger.enabled = false;
-            vGenericAction.enabled = false;
-            timeMinutes = Mathf.FloorToInt(settime / 60);
-            timeSeconds = Mathf.FloorToInt(settime % 60);
+            IntializedQuestionList(5);
 
-            if (questionCountHolder <= 0 )
-            {
-                if(onCompleted != null) { onCompleted.Invoke(); }
-                panel.HideUI();
-                session = false;
-            }
-            if(settime <= 0)
-            {
-                panel.HideUI();
-                session = false;
-                if(onTimesUp != null)
+        }
+        else if (difficulty == Quizdificulty.medium)
+        {
+            IntializedQuestionList(10);
+
+        }
+
+        else if (difficulty == Quizdificulty.hard)
+        {
+            IntializedQuestionList(20);
+
+        }
+        currentdifficulty = difficulty;
+        uIUpdater.selectedDificulty();
+    }
+
+    public void IntializedQuestionList(int value)
+    {
+        
+        _questionsCount = value;
+        remainingQuestionIndices = new List<int>();
+        for (int i = 0; i < value; i++)
+        {
+            remainingQuestionIndices.Add(i);
+        }
+        ShuffleQuestionIndices();
+    }
+    private void ShuffleQuestionIndices()
+    {
+        int n = remainingQuestionIndices.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = Random.Range(0, n + 1);
+            int value = remainingQuestionIndices[k];
+            remainingQuestionIndices[k] = remainingQuestionIndices[n];
+            remainingQuestionIndices[n] = value;
+        }
+    }
+
+    private void FirstSetQuestion()
+    {
+        int randomIndex = Random.Range(0, remainingQuestionIndices.Count);
+        int nextQuestionIndex = remainingQuestionIndices[randomIndex];
+        currentQuizItem = quizItems[nextQuestionIndex];
+        uIUpdater.UpdateUI(currentQuizItem.question, remainingQuestionIndices.Count);
+        remainingQuestionIndices.RemoveAt(randomIndex);
+      
+    }
+    private void MoveToNextQuestion()
+    {
+        
+        
+        // Check if there are remaining questions
+        if (remainingQuestionIndices.Count > 0)
+        {
+            // Randomly select the next question index
+            int randomIndex = Random.Range(0, remainingQuestionIndices.Count);
+            int nextQuestionIndex = remainingQuestionIndices[randomIndex];
+            // Get the quiz item for the selected question index
+            currentQuizItem = quizItems[nextQuestionIndex];
+            // Display the question
+            uIUpdater.UpdateUI(currentQuizItem.question, remainingQuestionIndices.Count);
+            remainingQuestionIndices.RemoveAt(randomIndex);
+        }
+        else
+        {
+            // The quiz is finished
+            Debug.Log("Quiz completed!");
+            ShowResult();
+        }
+    }
+    public void CheckAnswer(string selectedAnswer)
+    {
+        // Get the list of correct answers for the current question
+        List<string> correctAnswers = currentQuizItem.possibleAnswers;
+
+        // Check if the selected answer is in the list of correct answers
+        if (correctAnswers.Contains(selectedAnswer))
+        {
+            Debug.Log("Selected answer is correct!");
+            Score++;
+        }
+        else if(selectedAnswer == "test")
                 {
-                    onTimesUp.Invoke();
+                            Score++;
+                            Debug.Log("Selected answer is correct!");
                 }
-            }
-            
-        }
-        timerFeed.text = timeMinutes.ToString("0") + ":" + timeSeconds.ToString("00");
-        currentAnswerDebug = currentAnswer;
-        currentQuestionDebug = currentQuestion;
-        debugScore = scorecount.ToString();
-       
-
-    }
- 
-
-    public void Checker()
-    {
-        if (currentAnswer.ToLower().Equals(answerfield.text.ToLower()))//currentAnswer.ToLower().Contains(answerfiel.text.ToLower()) == currentAnswer) answerfield.text.ToLower() == currentAnswer.ToLower()||
-        {
-           
-            CorrectAnswer();
-            scorecount++;
-            currentQuestioncount++;
-            answerfield.text = "";
-            answerfield.Select();
-        }
-        else
-        { 
-            WrongAnswer();
-            currentQuestioncount++;
-            answerfield.text = "";
-            answerfield.Select();
-        }
-     if(questionCountHolder <= 0)
-        {
-            panel.HideUI();
-            
-        }
-    }
-
-    public string returnDifficulty()
-    {
-
-        return currentDifficulty;
-    }
-    public int returnScoreCount()
-    {
-        return scorecount;
-    }
-    public int returnQuestionCount()
-    {
-        return resultqeustion;
-        
-    }
-    public void resetScoreCount()
-    {
-        scorecount = 0;
-    }
-    public void QuestionPopulator(string difficulty)
-    {
-        for (int i = 0; i <= questions.Count -1 ; i++)
-        {
-            randomInts.Add(i);         
-        }
-        randomInts.Shuffle();
-        if (difficulty == "easy")
-        {
-            for (int i =0;i<easy;i++)
-            {
-                
-
-                givenQuestions.Add(questions[randomInts[i]]);
-            }
-            settime = 120f;
-            questiontotal = easy;
-            questionCountHolder = easy;
-            questionsLeft.text = "QuestionIndex: 1/10 QuestionIndex Left: 10";
-            resultqeustion = questionCountHolder;
-            currentDifficulty = "easy";
-        }    
-        if(difficulty == "normal")
-        {
-            for (int i = 0; i <= normal-1; i++)
-            {
-                givenQuestions.Add(questions[randomInts[i]]);
-            }
-            settime = 240f;
-            questiontotal = normal;
-            questionCountHolder = normal;
-            questionsLeft.text = "QuestionIndex: 1/20 QuestionIndex Left: 20";
-            resultqeustion = questionCountHolder;
-            currentDifficulty = "normal";
-        }
-        if(difficulty == "hard")
-        {
-            for (int i = 0; i <= hard-1; i++)
-            {
-                givenQuestions.Add(questions[randomInts[i]]);
-            }
-            settime = 360f;
-            questiontotal = hard;
-            questionCountHolder = hard;
-            questionsLeft.text = "QuestionIndex: 1/30 QuestionIndex Left: 30";
-            resultqeustion = questionCountHolder;
-            currentDifficulty = "hard";
-        }
-    }
-
-    public void StartGame()
-    {
-        if (_character.cc.isStrafing)
-        {
-            restrict.EquippedNotification();
-            return;
-        }
         else
         {
-            panel.ShowUI();
-            session = true;
-            globallock.DisableAllPlayerInputMovement();
-            questionField.text = CurrentQuestion();
-            currentAnswer = CurrentAnswer();
-            currentQuestioncount = 1;
+            Debug.Log("Selected answer is incorrect!");
         }
-       
-        
+
+        // Move to the next question
+        MoveToNextQuestion();
     }
 
-    public void EndSession()
+        IEnumerator DelayResult(){
+             
+            yield return new WaitForSeconds(5);
+            GameFinished();
+            
+        }
+    public void ShowResult(){
+        uIUpdater.ShowResult(Score,currentdifficulty);
+        StartCoroutine(DelayResult());
+        AchievementTrigger.Instance.ScoreCheck(Score,currentdifficulty);
+    }
+
+
+    public void GameFinished()
     {
-        mouse.DisableMouseUI();
-        session = false;
+        onGameFinished?.Invoke();
+        uIUpdater.EndGame();
+        usable.enabled = true;
+        GlobalInputLock.Instance.EnableAllMovements();
         sequencer.m_delayTimeLeft = 0;
-        globallock.EnableAllMovements();
-        trigger.enabled = true;
-        vGenericAction.enabled = true;
         
-    }
-
-    private string CurrentQuestion()
-    {
-        currentQuestion = givenQuestions[selection].question;
-
-        return currentQuestion;
-    }
-    private string CurrentAnswer()
-    {
-        
-            currentAnswer = givenQuestions[selection].answer;
-        return currentAnswer;
-    }
-    private void CorrectAnswer()
-    {
-        givenQuestions.Remove(givenQuestions[selection]);
-        questionCountHolder--;
-        SetQuestion();
-        UpdateUI();
-        questionField.text = CurrentQuestion();
-        Debug.Log("Correct is Called.");
-        if(onCorrect != null) { onCorrect.Invoke(); }
-    }
-    private void WrongAnswer()
-    {
-        givenQuestions.Remove(givenQuestions[selection]);
-        questionCountHolder--;
-        SetQuestion();
-        UpdateUI();
-        questionField.text = CurrentQuestion();
-        Debug.Log("Wrong is Called.");
-        if (onWrong != null) { onWrong.Invoke(); }
-
 
     }
-    private void SetQuestion()
-    {
-        selection = Random.Range(0, givenQuestions.Count);
-        StartCoroutine(randomizer());
-        currentAnswer = CurrentAnswer();
-    }
-    private void UpdateUI()
-    {
-        questionsLeft.text = "QuestionIndex: " + currentQuestioncount.ToString() + "/" + questiontotal+ " QuestionIndex Left: "+givenQuestions.Count;
-        
+    public void TimesUp(){
+
+            onTimesUp?.Invoke();
     }
 
-    public void QuitEndsession()
-    {
-        globallock.EnableAllMovements();
-        quizEnabler.ResetChoices();
-        session = false;
-        sequencer.m_delayTimeLeft = 0;
-       // _character.SetLockCameraInput(false);
-      ///  _character.SetLockUpdateMoveDirection(false);
-      //  _character.SetLockBasicInput(false);
-        trigger.enabled = true;
-        vGenericAction.enabled = true;
-        mouse.DisableMouseUI();
-        mainPanel.HideUI();
-        resetScoreCount();
-        answerfield.text = "";
-        resetScoreCount();
-        givenQuestions.Clear();
-        
-    }
 }
