@@ -26,6 +26,8 @@ public class UIQuizUpdater : MonoBehaviour
     [Space]
     [SerializeField]
     TextMeshProUGUI _questionsleft;
+    [SerializeField]
+    TextMeshProUGUI _scoreResult;
  
     
     public void UpdateUI(string currentQuestion,int questionsLeft){
@@ -50,6 +52,21 @@ public class UIQuizUpdater : MonoBehaviour
     public void StartGame(){
         UpdatePanel(_instructionPanel,false);
         UpdatePanel(_ingamePanel,true);
+    }
+    
+    public void ShowResult(int Score, Quizdificulty difficulty){
+            if(difficulty == Quizdificulty.easy){
+                 _scoreResult.text =  $"{Score}/5"; 
+            }
+            if(difficulty == Quizdificulty.medium){
+                 _scoreResult.text =  $"{Score}/10"; 
+            }
+            if(difficulty == Quizdificulty.hard){
+                 _scoreResult.text =  $"{Score}/20"; 
+            }
+            
+         UpdatePanel(_resultPanel,true);
+         UpdatePanel(_ingamePanel,false);
     }
     public void EndGame(){
         UpdatePanel(_mainPanel,false);

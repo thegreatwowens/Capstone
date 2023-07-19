@@ -3444,7 +3444,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 658.07166
-        y: 489.41187
+        y: 488.2354
         width: 160
         height: 30
     - id: 32
@@ -3475,7 +3475,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'Camera(HardwareMap,,3);
+        value: 'Camera(HardwareMap,,2);
 
           Delay(5);
 
@@ -3566,7 +3566,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 840.41327
-        y: 169.5353
+        y: 168.35884
         width: 160
         height: 30
     entryGroups: []
@@ -3732,14 +3732,14 @@ MonoBehaviour:
       conditionsString: CurrentQuestState("Detroit's Hardware") == "active"
       userScript: 'SetQuestState("Detroit''s Hardware", "success");
 
-        DetroitExplorer()'
+        AchievementDetroitExploration()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 69.082565
+        x: 29.082565
+        y: 68.165146
         width: 160
         height: 30
     - id: 2
@@ -3795,7 +3795,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 170
+        y: 170.91743
         width: 160
         height: 30
     - id: 3
@@ -3907,8 +3907,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 320
+        x: 29.08258
+        y: 320.00003
         width: 160
         height: 30
     - id: 5
@@ -4465,7 +4465,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 120
-        y: 720
+        y: 719.0826
         width: 160
         height: 30
     - id: 15
@@ -4525,7 +4525,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 487.7234
+        x: 487.64075
         y: 76.25531
         width: 160
         height: 30
@@ -4969,22 +4969,19 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'SetQuestState("Take Quest On Quiz Masters", "active");
+      userScript: 'SetQuestState("Droid Doctor", "success");
 
         Variable["CanGoInsideHardwareRoom"]
         = true;
 
-        MainHardwareUnlock();
-
-        SetQuestState("Droid Doctor",
-        "success")'
+        SetQuestState("Take a Test on Droid Doctor", "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 510.83484
-        y: 473
+        x: 468.78937
+        y: 490.04547
         width: 160
         height: 30
     - id: 24
@@ -5898,8 +5895,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 23.04306, y: 0}
-    canvasZoom: 1.0899999
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.8800001
   - id: 4
     fields:
     - title: Title

@@ -4,6 +4,7 @@ using DiZTools_AchievementsSystem;
 
 public class AchievementTrigger : MonoBehaviour
     {
+        public static AchievementTrigger Instance;
       [SerializeField]
        GameObject _cityExplorer,_detroitHardware,_mainHardwareUnlock,_EasyQuiz,_mediumQuiz,_hardQuiz,_binaryInteract;
 
@@ -19,41 +20,55 @@ public class AchievementTrigger : MonoBehaviour
         }
 
         public void BinaryInteract(){
+          AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.Binary, true);
             _binaryInteract.SetActive(false);
 
         }
         
         public void MainHardwareUnlock(){
+          AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.UnlockMainHardware, true);
            _mainHardwareUnlock.SetActive(false);
         }
         
         public void EasyQuiz(){
+          AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.QuizMasterEasy, true);
             _EasyQuiz.SetActive(false);
         }
         public void MeduimQuiz(){
+          AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.QuizMasterMedium, true);
           _mediumQuiz.SetActive(false);
 
         }
         public void HardQuiz(){
+          AchievementsManager.Instance.AchievementsData.UpdateAchievementData(AchievementsDataGlossary.QuizHard, true);
           _mainHardwareUnlock.SetActive(false);
         }
 
+        public void ScoreCheck(int Score , Quizdificulty difficulty){
+                if(Score == 5 && difficulty == Quizdificulty.easy)
+                        EasyQuiz();
+                if(Score == 10 && difficulty == Quizdificulty.medium)
+                        MeduimQuiz();
+                 if(Score == 20 && difficulty == Quizdificulty.hard)
+                        HardQuiz();
+          
+        }
         
       void OnEnable()
       {
-        Lua.RegisterFunction("DetroitExploration", this, SymbolExtensions.GetMethodInfo(() => AchievementDetroitExploration()));
+        Lua.RegisterFunction("AchievementDetroitExploration", this, SymbolExtensions.GetMethodInfo(() => AchievementDetroitExploration()));
         Lua.RegisterFunction("CityExplorer", this, SymbolExtensions.GetMethodInfo(() => CityExplorer()));
         Lua.RegisterFunction("BinaryInteract", this, SymbolExtensions.GetMethodInfo(() => BinaryInteract()));
         Lua.RegisterFunction("MainHardwareUnlock", this, SymbolExtensions.GetMethodInfo(() => MainHardwareUnlock()));
         Lua.RegisterFunction("EasyQuiz", this, SymbolExtensions.GetMethodInfo(() => EasyQuiz()));
         Lua.RegisterFunction("MeduimQuiz", this, SymbolExtensions.GetMethodInfo(() => MeduimQuiz()));
-        Lua.RegisterFunction("HardQuiz", this, SymbolExtensions.GetMethodInfo(() => HardQuiz()));
+        Lua.RegisterFunction(" ", this, SymbolExtensions.GetMethodInfo(() => HardQuiz()));
 
       }
 
       void OnDisable()
       {
-       Lua.UnregisterFunction("DetroitExploration");
+       Lua.UnregisterFunction("AchievementDetroitExploration");
        Lua.UnregisterFunction("CityExplorer");
        Lua.UnregisterFunction("BinaryInteract");
        Lua.UnregisterFunction("MainHardwareUnlock");

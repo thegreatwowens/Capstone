@@ -1,8 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 using PixelCrushers.DialogueSystem.SequencerCommands;
+using UnityEngine.Events;
+using System.Collections;
 
 public enum Quizdificulty
 {
@@ -23,7 +24,12 @@ public class QuizManager1 : SequencerCommandDelay
     private QuizItem currentQuizItem;
 
     int _questionsCount { get; set; }
-
+    
+    [HideInInspector]
+    public int Score {get; set;}
+    
+    public UnityEvent onGameFinished;
+    public UnityEvent onTimesUp;
 
     private Quizdificulty currentdifficulty;
 
@@ -36,9 +42,10 @@ public class QuizManager1 : SequencerCommandDelay
     }
     public void GameStart()
     {
-
-        uIUpdater.StartGame();
+        Score = 0;
         FirstSetQuestion();
+        uIUpdater.StartGame();
+      
 
     }
     public int Getdifficulty()
@@ -77,6 +84,7 @@ public class QuizManager1 : SequencerCommandDelay
 
     public void IntializedQuestionList(int value)
     {
+        
         _questionsCount = value;
         remainingQuestionIndices = new List<int>();
         for (int i = 0; i < value; i++)
@@ -125,7 +133,7 @@ public class QuizManager1 : SequencerCommandDelay
         {
             // The quiz is finished
             Debug.Log("Quiz completed!");
-            GameFinished();
+            ShowResult();
         }
     }
     public void CheckAnswer(string selectedAnswer)
@@ -137,7 +145,13 @@ public class QuizManager1 : SequencerCommandDelay
         if (correctAnswers.Contains(selectedAnswer))
         {
             Debug.Log("Selected answer is correct!");
+            Score++;
         }
+        else if(selectedAnswer == "test")
+                {
+                            Score++;
+                            Debug.Log("Selected answer is correct!");
+                }
         else
         {
             Debug.Log("Selected answer is incorrect!");
@@ -146,12 +160,31 @@ public class QuizManager1 : SequencerCommandDelay
         // Move to the next question
         MoveToNextQuestion();
     }
+
+        IEnumerator DelayResult(){
+             
+            yield return new WaitForSeconds(5);
+            GameFinished();
+            
+        }
+    public void ShowResult(){
+        uIUpdater.ShowResult(Score,currentdifficulty);
+        AchievementTrigger.Instance.ScoreCheck(Score,currentdifficulty);
+        StartCoroutine(DelayResult());
+    }
     public void GameFinished()
     {
+        onGameFinished?.Invoke();
         uIUpdater.EndGame();
         usable.enabled = true;
         GlobalInputLock.Instance.EnableAllMovements();
         sequencer.m_delayTimeLeft = 0;
+        
+
+    }
+    public void TimesUp(){
+
+            onTimesUp?.Invoke();
     }
 
 }

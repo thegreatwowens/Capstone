@@ -35,6 +35,7 @@ void OnEnable()
 
   void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        bGSource.Stop();
         currentScene = SceneManager.GetActiveScene();
     }
 

@@ -52,6 +52,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d3a2160f2d8d07649aa38716767352ab, type: 3}
   - name: BGMusicTimeline
     clip: {fileID: 8300000, guid: 017e4e7914996b24c904523f558f255a, type: 3}
+  - name: BGMusicHardware
+    clip: {fileID: 8300000, guid: 57227f499383f0d459c197731413841a, type: 3}
   fXClip:
   - name: UIClick
     clip: {fileID: 8300000, guid: d8f878641167e96469f303773ba42b25, type: 3}

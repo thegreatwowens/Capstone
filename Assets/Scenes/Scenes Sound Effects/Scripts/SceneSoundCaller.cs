@@ -7,6 +7,7 @@ public class SceneSoundCaller : MonoBehaviour
 
   public bool isMainMenu;
   public bool isTimeline;
+  public bool isHardware;
 
 
 void Start()
@@ -17,7 +18,23 @@ void Start()
     }else if(isTimeline)
     {
             SoundManager.Instance.PlayMusic("BGMusicTimeline",true);
+    }else if (isHardware){
+           SoundManager.Instance.PlayMusic("BGMusicHardware",true);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 }
@@ -31,3 +48,4 @@ void Start()
 
 
 }
+

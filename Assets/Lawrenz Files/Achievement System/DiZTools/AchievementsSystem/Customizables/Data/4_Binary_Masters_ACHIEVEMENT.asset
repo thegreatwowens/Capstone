@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c1629d777e4e674896fc2c986504265, type: 3}
-  m_Name: 2_Quiz_Master_Easy_ACHIEVEMENT
+  m_Name: 4_Binary_Masters_ACHIEVEMENT
   m_EditorClassIdentifier: 
-  m_nameID: Networking Expert
-  m_description: Master of Networking
-  m_thumbnail: {fileID: 21300000, guid: dcf98bd255dba40a6a5a2f3b408c48d4, type: 3}
-  m_achievementDataName: QuizMasterEasy
+  m_nameID: Binary Masters
+  m_description: Completed 10 Binary Problems
+  m_thumbnail: {fileID: 21300000, guid: 7529d5dfaab6d4ef79d989274aecf378, type: 3}
+  m_achievementDataName: Binary

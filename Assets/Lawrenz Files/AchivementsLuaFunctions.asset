@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conditionFunctions: []
   scriptFunctions:
-  - functionName: Achievements/DetroitExplorer
+  - functionName: Achievements/AchievementDetroitExploration
     parameters: 
     returnValue: 0
   - functionName: Achievements/CityExplorer

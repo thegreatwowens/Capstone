@@ -17,13 +17,29 @@ MonoBehaviour:
     item2: 0
   - item1: Detroit Explored
     item2: 0
-  - item1: Quiz Master Easy
+  - item1: Networking Expert
+    item2: 0
+  - item1: Easy Memory
+    item2: 0
+  - item1: Binary Masters
+    item2: 0
+  - item1: New Memories
+    item2: 0
+  - item1: Advance Memory
     item2: 0
   m_achievementsDataBool:
   - item1: CityExplorer
     item2: 0
   - item1: DetroitHardware
     item2: 0
-  - item1: NONE
+  - item1: NetworkExpert
+    item2: 0
+  - item1: QuizMasterEasy
+    item2: 0
+  - item1: Binary
+    item2: 0
+  - item1: QuizMasterMedium
+    item2: 0
+  - item1: QuizHard
     item2: 0
   m_achievementsDataInt: []

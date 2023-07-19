@@ -45152,25 +45152,13 @@ PrefabInstance:
       propertyPath: onClose.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3305049219801297276}
-    - target: {fileID: 2465090568762037418, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2465090568762151910, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2465090568768096382, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 2465090568787661138, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2465090568787661138, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2465090568787661138, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2465090568787661138, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_SizeDelta.x
@@ -45182,7 +45170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2465090568787661138, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 2465090568787661960, guid: bf4fb6e9d4516cc439d64cb670a98185, type: 3}
       propertyPath: m_AnchorMax.y
