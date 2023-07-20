@@ -35,3 +35,6 @@ MonoBehaviour:
   - functionName: Achievements/HardQuiz
     parameters: 
     returnValue: 0
+  - functionName: Achievements/NetworkExpert
+    parameters: 
+    returnValue: 0

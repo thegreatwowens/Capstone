@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 1602645797294495582}
   - component: {fileID: 6925736438360986731}
   - component: {fileID: 6113380821261907043}
-  - component: {fileID: 1896876365268363739}
+  - component: {fileID: 309672683755762061}
   m_Layer: 5
   m_Name: Perfect Normal Quiz
   m_TagString: Untagged
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1896876365268363739
+--- !u!114 &309672683755762061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,10 +223,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 405129986467608711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 8477095309551408649}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["FinishedMeduimQuiz"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 4423365984033175449}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &532533027417321665
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +470,7 @@ GameObject:
   - component: {fileID: 5806401322751949366}
   - component: {fileID: 3511606961409321468}
   - component: {fileID: 8190481408034627788}
+  - component: {fileID: 6541746312951253463}
   m_Layer: 5
   m_Name: Image- Detroit
   m_TagString: Untagged
@@ -515,6 +537,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6541746312951253463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607080838602009845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 607080838602009845}
 --- !u!1 &623732862730662967
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +561,7 @@ GameObject:
   - component: {fileID: 5499259029123303716}
   - component: {fileID: 9106238850011038523}
   - component: {fileID: 7459679865330581594}
-  - component: {fileID: 7542032846980498152}
+  - component: {fileID: 8400419102628652437}
   m_Layer: 5
   m_Name: Networking Expert
   m_TagString: Untagged
@@ -594,7 +629,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7542032846980498152
+--- !u!114 &8400419102628652437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -603,10 +638,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 623732862730662967}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 8651934549577210397}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["NetworkMaster"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 8491620072619268166}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &672011117271393997
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +975,7 @@ GameObject:
   - component: {fileID: 6371906402239652186}
   - component: {fileID: 3952243444162169529}
   - component: {fileID: 6342674922616699744}
-  - component: {fileID: 5216559392588844036}
+  - component: {fileID: 3781695432397976714}
   m_Layer: 5
   m_Name: ExplorerDetroirt
   m_TagString: Untagged
@@ -987,7 +1043,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5216559392588844036
+--- !u!114 &3781695432397976714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -996,10 +1052,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 759017664184655531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 9160559052207894647}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["CityExplorer"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 607080838602009845}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &839777894958680567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.1768, y: 150.1955}
+  m_AnchoredPosition: {x: 5.1768, y: 168.78368}
   m_SizeDelta: {x: 1118.4, y: 699.0795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4019176778582821237
@@ -1307,6 +1384,7 @@ GameObject:
   - component: {fileID: 7900671332910269012}
   - component: {fileID: 3875634506026553255}
   - component: {fileID: 5083470748555438566}
+  - component: {fileID: 6400744021774812668}
   m_Layer: 5
   m_Name: Detroits HardwareMap
   m_TagString: Untagged
@@ -1373,6 +1451,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6400744021774812668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207498823071026867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 1207498823071026867}
 --- !u!1 &1309842459121882820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,7 +2676,7 @@ GameObject:
   - component: {fileID: 8032939441659380649}
   - component: {fileID: 3282559088687633461}
   - component: {fileID: 5326111137277161219}
-  - component: {fileID: 114679448595842338}
+  - component: {fileID: 7654039785281742658}
   m_Layer: 5
   m_Name: Binary Expert
   m_TagString: Untagged
@@ -2653,7 +2744,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114679448595842338
+--- !u!114 &7654039785281742658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2662,10 +2753,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 2568633179118706709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 5497732591032803348}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["BinaryScore"] >= 10
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 6224440052503803379}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &2651906406158751303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,7 +2789,7 @@ GameObject:
   - component: {fileID: 93600922916326730}
   - component: {fileID: 8765349333405618093}
   - component: {fileID: 6286814929819965529}
-  - component: {fileID: 7837453449716224646}
+  - component: {fileID: 4669825913190963059}
   m_Layer: 5
   m_Name: Perfect Hard Quiz
   m_TagString: Untagged
@@ -2745,7 +2857,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7837453449716224646
+--- !u!114 &4669825913190963059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2754,10 +2866,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 2651906406158751303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 8640587741003839686}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["FinishedHardQuiz"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 0}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &2728900674800528838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,6 +3324,7 @@ GameObject:
   - component: {fileID: 6351201512972032257}
   - component: {fileID: 4747275109697321789}
   - component: {fileID: 815441934631975315}
+  - component: {fileID: 1082687220434287455}
   m_Layer: 5
   m_Name: Image Perfect Hard
   m_TagString: Untagged
@@ -3257,6 +3391,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1082687220434287455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3037721690320780461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 3037721690320780461}
 --- !u!1 &3153304727452291203
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,6 +4981,7 @@ GameObject:
   - component: {fileID: 4825240404852773311}
   - component: {fileID: 164428359898499232}
   - component: {fileID: 4491972726427035790}
+  - component: {fileID: 7893586408411179923}
   m_Layer: 5
   m_Name: Image Perfect Normal
   m_TagString: Untagged
@@ -4900,6 +5048,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7893586408411179923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423365984033175449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 4423365984033175449}
 --- !u!1 &4456264471444101559
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,7 +5298,7 @@ GameObject:
   - component: {fileID: 5470464226332196681}
   - component: {fileID: 7683364061589369215}
   - component: {fileID: 7533821342500218688}
-  - component: {fileID: 2550079555477494453}
+  - component: {fileID: 4969839591372004348}
   m_Layer: 5
   m_Name: Perfect Easy Quiz
   m_TagString: Untagged
@@ -5205,7 +5366,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2550079555477494453
+--- !u!114 &4969839591372004348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5214,10 +5375,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 4554443061004136308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 6243910317359044958}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["FinishedEasyQuiz"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 4757535330185927841}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &4566845381789320478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,7 +5622,7 @@ GameObject:
   - component: {fileID: 842110176170007199}
   - component: {fileID: 145740555551584656}
   - component: {fileID: 4136922304801706381}
-  - component: {fileID: 4792038506971720487}
+  - component: {fileID: 3706235372891138750}
   m_Layer: 5
   m_Name: Unlocks Detroit's Main Hardware
   m_TagString: Untagged
@@ -5508,7 +5690,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4792038506971720487
+--- !u!114 &3706235372891138750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5517,10 +5699,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 4697698724650614659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 1942243872258929759}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["CanGoInsideHardwareRoom"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 5850660028604005777}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &4751113558485744946
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,6 +5870,7 @@ GameObject:
   - component: {fileID: 5823837238999946059}
   - component: {fileID: 69624633552901664}
   - component: {fileID: 7706640768415309531}
+  - component: {fileID: 7893368308823686803}
   m_Layer: 5
   m_Name: Image Perfect Easy
   m_TagString: Untagged
@@ -5733,6 +5937,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7893368308823686803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4757535330185927841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 4757535330185927841}
 --- !u!1 &4994228903585811285
 GameObject:
   m_ObjectHideFlags: 0
@@ -6454,6 +6671,7 @@ GameObject:
   - component: {fileID: 8862318624107416234}
   - component: {fileID: 5723137401448208794}
   - component: {fileID: 7008291445469615775}
+  - component: {fileID: 5223952496168526477}
   m_Layer: 5
   m_Name: Unlocks Detroit's Main Hardware
   m_TagString: Untagged
@@ -6520,6 +6738,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5223952496168526477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5850660028604005777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 5850660028604005777}
 --- !u!1 &5891209530204708127
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,7 +6762,7 @@ GameObject:
   - component: {fileID: 5085344334704789168}
   - component: {fileID: 7979499190431644070}
   - component: {fileID: 5538751330645838695}
-  - component: {fileID: 4929585075426700439}
+  - component: {fileID: 8893774122823869832}
   m_Layer: 5
   m_Name: Detroit's Hardware
   m_TagString: Untagged
@@ -6599,7 +6830,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4929585075426700439
+--- !u!114 &8893774122823869832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6608,10 +6839,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 5891209530204708127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb0cf6e7af567e4aad2f42e75812b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cedf348ece7ef64aa74cb295e8ed71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 4168535915771710156}
+  frequency: 1
+  once: 0
+  observeGameObject: {fileID: 0}
+  condition:
+    luaConditions:
+    - Variable["DetroitExplorer"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  questName: 
+  questState: 0
+  luaCode: 
+  sequence: 
+  alertMessage: 
+  textTable: {fileID: 0}
+  sendMessages:
+  - gameObject: {fileID: 1207498823071026867}
+    message: DisableImage
+    parameter: 
+  useQuestNamePicker: 1
 --- !u!1 &5930899253629961392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,6 +7177,7 @@ GameObject:
   - component: {fileID: 3342682709648736409}
   - component: {fileID: 790133070395862295}
   - component: {fileID: 7506212288776030490}
+  - component: {fileID: 1877164391908780375}
   m_Layer: 5
   m_Name: Binary
   m_TagString: Untagged
@@ -6991,6 +7244,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1877164391908780375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224440052503803379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 6224440052503803379}
 --- !u!1 &6233810505571417392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,7 +8346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A true adventurer\n              Press\"K\" to view"
+  m_text: A true adventurer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14513bf5aa594ec41ab53577f69b61fc, type: 2}
   m_sharedMaterial: {fileID: 7535658397655098795, guid: 14513bf5aa594ec41ab53577f69b61fc, type: 2}
@@ -8593,7 +8859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -87, y: 0.000030517578}
+  m_AnchoredPosition: {x: -87, y: 0}
   m_SizeDelta: {x: 320, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542458241071103475
@@ -9478,8 +9744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUIControls:
-  - m_InventoryUI: {fileID: 7583956672093548209}
-    m_KeyCode: 105
   - m_InventoryUI: {fileID: 8657739735428770319}
     m_KeyCode: 107
 --- !u!114 &7542854357393854041
@@ -10204,7 +10468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -22.5, y: 0.000045776367}
+  m_AnchoredPosition: {x: -22.5, y: 0.000015258789}
   m_SizeDelta: {x: 320, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542555598130117141
@@ -10766,7 +11030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -22.5, y: -0.000015258789}
+  m_AnchoredPosition: {x: -22.5, y: 0.000015258789}
   m_SizeDelta: {x: 320, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542469510067213781
@@ -13428,7 +13692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -4.3892, y: 0.000061035156}
+  m_AnchoredPosition: {x: -4.3892, y: 0.000045776367}
   m_SizeDelta: {x: 395.05, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7542937537912411103
@@ -15666,7 +15930,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7542840604383802223}
   m_HandleRect: {fileID: 7649053416052622023}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -15793,7 +16057,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7542478746341273885}
   m_HandleRect: {fileID: 7649050238684583277}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17881,7 +18145,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5148194457882371530}
   m_HandleRect: {fileID: 1108173026219200614}
   m_Direction: 2
-  m_Value: 0.05506501
+  m_Value: 0.000000045202206
   m_Size: 0.5171259
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17977,6 +18241,7 @@ GameObject:
   - component: {fileID: 7047481451129294496}
   - component: {fileID: 5116344541622902905}
   - component: {fileID: 6686623753124006240}
+  - component: {fileID: 6996642521391235255}
   m_Layer: 5
   m_Name: Networking Expert
   m_TagString: Untagged
@@ -18043,6 +18308,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6996642521391235255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8491620072619268166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2d37b1afd0b924b866fd380078570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageholder: {fileID: 8491620072619268166}
 --- !u!1 &8563351401762270746
 GameObject:
   m_ObjectHideFlags: 0

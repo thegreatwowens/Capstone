@@ -188,7 +188,8 @@ public class BinarytoDecimal : SequencerCommandDelay
         _character.SetLockUpdateMoveDirection(false);
         _character.SetLockCameraInput(false);
         _character.SetLockAllInput(false);
-        if (OnCompleteTask != null)
+     
+         if (OnCompleteTask != null)
         {
             OnCompleteTask.Invoke();
         }

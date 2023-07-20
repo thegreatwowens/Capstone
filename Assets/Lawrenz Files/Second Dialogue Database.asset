@@ -384,6 +384,56 @@ MonoBehaviour:
       value: Finish Easy Quest to Unlock Hardware Map
       type: 0
       typeString: 
+  - id: 13
+    fields:
+    - title: Name
+      value: Binary Mastery
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Entry Count
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: 
+    - title: Entry 1
+      value: (Repeatable) Binary Solving
+      type: 0
+      typeString: 
   - id: 7
     fields:
     - title: Name
@@ -531,7 +581,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 1
-      value: (Repeatable) Achieve all Test Achievement Press "K" to view progress
+      value: (Repeatable) Test Challenge
       type: 0
       typeString: 
   - id: 10
@@ -682,56 +732,6 @@ MonoBehaviour:
       typeString: 
     - title: Entry 1
       value: (Repeatable) Maintain the Hardware Map Connectivity
-      type: 0
-      typeString: 
-  - id: 13
-    fields:
-    - title: Name
-      value: Binary Mastery
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Success Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Failure Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: State
-      value: unassigned
-      type: 0
-      typeString: CustomFieldType_QuestState
-    - title: Is Item
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Trackable
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Track
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Entry Count
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Entry 1 State
-      value: active
-      type: 0
-      typeString: 
-    - title: Entry 1
-      value: (Repeatable) Achieve Binary Mastery Press " K" to view
       type: 0
       typeString: 
   locations:
@@ -896,6 +896,20 @@ MonoBehaviour:
     fields:
     - title: Name
       value: CanInteractWithHardwareNavi
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 11
+    fields:
+    - title: Name
+      value: NetworkMaster
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -2592,13 +2606,16 @@ MonoBehaviour:
         SetQuestEntryState("Interact
         Posters", 2, "success");
 
-        CityExplorer()'
+        CityExplorer();
+
+        Variable["CityExplorer"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
+        x: 209.23077
         y: 70
         width: 160
         height: 30
@@ -3570,8 +3587,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 50.574146, y: 7.4379883}
+    canvasZoom: 1.2099998
   - id: 3
     fields:
     - title: Title
@@ -3732,7 +3749,10 @@ MonoBehaviour:
       conditionsString: CurrentQuestState("Detroit's Hardware") == "active"
       userScript: 'SetQuestState("Detroit''s Hardware", "success");
 
-        AchievementDetroitExploration()'
+        AchievementDetroitExploration();
+
+        Variable["DetroitExplorer"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4525,7 +4545,9 @@ MonoBehaviour:
         Variable["CanGoInsideHardwareRoom"]
         = true;
 
-        SetQuestState("Talk again to Navi", "success")'
+        SetQuestState("Talk again to Navi", "success");
+
+        MainHardwareUnlock()'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4984,8 +5006,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 468.78937
-        y: 490.04547
+        x: 513.78937
+        y: 528.0455
         width: 160
         height: 30
     - id: 24
@@ -5899,8 +5921,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 89.78255, y: 55.72454}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
   - id: 4
     fields:
     - title: Title
