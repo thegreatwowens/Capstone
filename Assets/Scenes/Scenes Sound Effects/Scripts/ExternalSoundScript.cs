@@ -8,7 +8,6 @@ public class ExternalSoundScript : MonoBehaviour
 
 void Start()
 {
-    SoundManager.Instance.PlayMusic("BGMusicCharacterSelection",true);
 }
 
     public void UIClicks(){

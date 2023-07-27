@@ -7677,6 +7677,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809a91f78691f7644bfa1a3221cae90d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cityExplorer: {fileID: 0}
+  _detroitHardware: {fileID: 0}
+  _mainHardwareUnlock: {fileID: 0}
+  _EasyQuiz: {fileID: 0}
+  _mediumQuiz: {fileID: 0}
+  _hardQuiz: {fileID: 0}
+  _binaryInteract: {fileID: 0}
 --- !u!114 &7701166049979104619
 MonoBehaviour:
   m_ObjectHideFlags: 0

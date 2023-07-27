@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using PixelCrushers;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
@@ -33,10 +34,15 @@ void OnEnable()
     SceneManager.sceneLoaded += OnSceneLoaded;
 }
 
+
   void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        bGSource.Stop();
+       
+        
         currentScene = SceneManager.GetActiveScene();
+        if(currentScene.buildIndex != 1){
+                    bGSource.Stop();
+        }
     }
 
     private void OnDisable() {
