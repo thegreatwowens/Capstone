@@ -57,7 +57,7 @@ public class QuizManager : SequencerCommandDelay
         else if (currentdifficulty == Quizdificulty.medium)
             value = 10;
         else if (currentdifficulty == Quizdificulty.hard)
-            value = 15;
+            value = 20;
 
         return value;
     }

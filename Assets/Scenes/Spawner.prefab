@@ -47,5 +47,5 @@ MonoBehaviour:
   fixedSpawnPoint: 1
   PlayerGender:
   - {fileID: 2844887999557054792, guid: cb688e7eabedfdd4b8fa77e9ec426aa8, type: 3}
-  - {fileID: 8337947024786354829, guid: 58dbada0c85d6f146b251db6733abde0, type: 3}
+  - {fileID: 2844887999557054792, guid: 158987fc345da014a8b69effa90436d7, type: 3}
   _savedPlayerPosition: {x: 0, y: 0, z: 0}

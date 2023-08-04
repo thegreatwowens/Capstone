@@ -37,12 +37,8 @@ void OnEnable()
 
   void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-       
-        
+
         currentScene = SceneManager.GetActiveScene();
-        if(currentScene.buildIndex != 1){
-                    bGSource.Stop();
-        }
     }
 
     private void OnDisable() {

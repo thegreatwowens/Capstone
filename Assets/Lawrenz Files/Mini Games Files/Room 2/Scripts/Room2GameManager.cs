@@ -30,6 +30,10 @@ namespace OwnCode{
         public UnityEvent Completed;
         public UnityEvent OnCompleting;
 
+        public UnityEvent Achieved;
+
+        int correctAnswers;
+
         private void Start()
         {
             for (int j = 0; j <= Computers.Count - 1; j++)
@@ -60,13 +64,12 @@ namespace OwnCode{
 
             if(ComputerCounts >= 5 || settime <= 0)
             {
-                if(OnCompleting != null)
-                {
-                    OnCompleting.Invoke();
-                }
+                OnCompleting? . Invoke();
+              
                 StartCoroutine(ReturntoMap());
                 if (settime >= 0)
                 {
+                    timerUI.fontSize = 20;
                     timerUI.text = "You will be return after: " + timeSeconds.ToString() + "s";
                 }
 
@@ -80,6 +83,9 @@ namespace OwnCode{
         }
         IEnumerator ReturntoMap()
         {
+              if(correctAnswers >= 5){
+                        Achieved ? .Invoke();
+              }
             settime = 5;
             yield return new WaitForSeconds(5);
             if (Completed != null)
@@ -116,6 +122,7 @@ namespace OwnCode{
                     {
                         Computer1text.text = "Computer #1 Completed";
                         ComputerCounts++;
+                        correctAnswers++;
                     }
                     
                     break;
@@ -123,6 +130,7 @@ namespace OwnCode{
                     {
                         Computer2text.text = "Computer #2 Completed";
                         ComputerCounts++;
+                        correctAnswers++;
                     }
                    
                     break;
@@ -131,6 +139,7 @@ namespace OwnCode{
                     {
                         Computer3text.text = "Computer #3 Completed";
                         ComputerCounts++;
+                        correctAnswers++;
                     }
                     
                     break;
@@ -139,6 +148,7 @@ namespace OwnCode{
                     {
                         Computer4text.text = "Computer #4 Completed";
                         ComputerCounts++;
+                        correctAnswers++;
                     }
                    
                     break;
@@ -147,6 +157,7 @@ namespace OwnCode{
                     {
                         Computer5text.text = "Computer #5 Completed";
                         ComputerCounts++;
+                        correctAnswers++;
                     }
                     
                     break;

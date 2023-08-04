@@ -49,6 +49,7 @@ public class BinarytoDecimal : SequencerCommandDelay
     [SerializeField]
     private UnityEvent WeaponIsEquipped;
     #endregion
+    int currentValue;
 
 
     private new void Start()
@@ -145,6 +146,10 @@ public class BinarytoDecimal : SequencerCommandDelay
             gamepanel.OpenPanel();
         }
 
+        currentValue = DialogueLua.GetVariable("BinaryScore").asInt;
+        print ("before value:"+currentValue);
+
+
     }
     public void ExitGame()
     {
@@ -188,7 +193,9 @@ public class BinarytoDecimal : SequencerCommandDelay
         _character.SetLockUpdateMoveDirection(false);
         _character.SetLockCameraInput(false);
         _character.SetLockAllInput(false);
-     
+
+         //DialogueLua.SetVariable("BinaryScore",currentValue+=1);
+         print("new value: "+ currentValue);
          if (OnCompleteTask != null)
         {
             OnCompleteTask.Invoke();

@@ -5,11 +5,6 @@ using UnityEngine;
 public class ExternalSoundScript : MonoBehaviour
 {
     
-
-void Start()
-{
-}
-
     public void UIClicks(){
         SoundManager.Instance.PlaySoundFx("UIClick");
     }       
