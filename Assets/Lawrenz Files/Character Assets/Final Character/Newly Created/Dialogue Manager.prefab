@@ -3917,7 +3917,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2465090568762096580}
   m_HandleRect: {fileID: 2465090568787760558}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5094,7 +5094,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2465090568762136462}
   m_HandleRect: {fileID: 2465090568787752286}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10178,7 +10178,7 @@ MonoBehaviour:
   m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
   skipApplyDataAfterFramesIfApplyImmediate: 1
-  saveRawData: 0
+  saveRawData: 1
 --- !u!114 &8134694687788417591
 MonoBehaviour:
   m_ObjectHideFlags: 0

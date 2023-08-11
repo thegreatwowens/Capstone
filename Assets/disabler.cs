@@ -18,6 +18,8 @@ public class disabler : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         disable = GameObject.Find("Dialogue Panel");
         disable.SetActive(false);
+        yield return new WaitForSeconds(1);
+         MouseSettingsInput.Instance.EnableMouseUI();
 
     }
 

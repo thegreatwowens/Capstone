@@ -143,18 +143,18 @@ namespace Invector.vCharacterController
 
         void UpdateSliders(vThirdPersonController cc)
         {
-            if (cc.maxHealth != healthSlider.maxValue)
-            {
-                healthSlider.maxValue = Mathf.Lerp(healthSlider.maxValue, cc.maxHealth, 2f * Time.fixedDeltaTime);
-                healthSlider.onValueChanged.Invoke(healthSlider.value);
-            }
-            healthSlider.value = Mathf.Lerp(healthSlider.value, cc.currentHealth, 2f * Time.fixedDeltaTime);
-            if (cc.maxStamina != staminaSlider.maxValue)
-            {
-                staminaSlider.maxValue = Mathf.Lerp(staminaSlider.maxValue, cc.maxStamina, 2f * Time.fixedDeltaTime);
-                staminaSlider.onValueChanged.Invoke(staminaSlider.value);
-            }
-            staminaSlider.value = cc.currentStamina;
+          //  if (cc.maxHealth != healthSlider.maxValue)
+           // {
+           //     healthSlider.maxValue = Mathf.Lerp(healthSlider.maxValue, cc.maxHealth, 2f * Time.fixedDeltaTime);
+          //      healthSlider.onValueChanged.Invoke(healthSlider.value);
+           // }
+           // healthSlider.value = Mathf.Lerp(healthSlider.value, cc.currentHealth, 2f * Time.fixedDeltaTime);
+           // if (cc.maxStamina != staminaSlider.maxValue)
+           // {
+           //     staminaSlider.maxValue = Mathf.Lerp(staminaSlider.maxValue, cc.maxStamina, 2f * Time.fixedDeltaTime);
+          //      staminaSlider.onValueChanged.Invoke(staminaSlider.value);
+          //  }
+           // staminaSlider.value = cc.currentStamina;
         }
 
         public void ShowDamageSprite()

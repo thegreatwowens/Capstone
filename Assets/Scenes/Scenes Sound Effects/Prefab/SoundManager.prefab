@@ -53,10 +53,10 @@ MonoBehaviour:
   - name: BGMusicTimeline
     clip: {fileID: 8300000, guid: 017e4e7914996b24c904523f558f255a, type: 3}
   - name: BGMusicHardware
-    clip: {fileID: 8300000, guid: 57227f499383f0d459c197731413841a, type: 3}
+    clip: {fileID: 8300000, guid: ce2bdc71de8221046b5109f02c551f46, type: 3}
   - name: GeneralSound
     clip: {fileID: 8300000, guid: ce2bdc71de8221046b5109f02c551f46, type: 3}
-  - name: NetworkRooom
+  - name: NetworkRoom
     clip: {fileID: 8300000, guid: 4d0a6cc5f961d7a4fb06b93f247d6c45, type: 3}
   fXClip:
   - name: UIClick

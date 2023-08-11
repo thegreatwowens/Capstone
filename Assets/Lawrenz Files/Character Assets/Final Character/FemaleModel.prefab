@@ -3294,8 +3294,8 @@ MonoBehaviour:
   _spawnParticle: 1
   _spawnStepMark: 1
   _useTriggerEnter: 1
-  leftFootTrigger: {fileID: 0}
-  rightFootTrigger: {fileID: 0}
+  leftFootTrigger: {fileID: 5674718667434001635}
+  rightFootTrigger: {fileID: 8547368612283946105}
   currentStep: {fileID: 0}
   footStepTriggers: []
 --- !u!114 &2557874620683021640
@@ -41808,6 +41808,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 861017263734875505, guid: 55450b9096325aa4c9c819b95bb53c9e, type: 3}
   m_PrefabInstance: {fileID: 125290824814151586}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5674718667434001635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5727938640697836353, guid: 55450b9096325aa4c9c819b95bb53c9e, type: 3}
+  m_PrefabInstance: {fileID: 125290824814151586}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b04f4ac1b776ff48b5f78a97b57f776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8547368612283946105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8584781322351530971, guid: 55450b9096325aa4c9c819b95bb53c9e, type: 3}
+  m_PrefabInstance: {fileID: 125290824814151586}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b04f4ac1b776ff48b5f78a97b57f776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &715820073530808211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41967,11 +41989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959368626496028762, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Size
-      value: 0.51712584
+      value: 0.5171259
       objectReference: {fileID: 0}
     - target: {fileID: 4959368626496028762, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Value
-      value: 0.00000027121314
+      value: 0.000000045202206
       objectReference: {fileID: 0}
     - target: {fileID: 5085344334704789168, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -42075,7 +42097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7542438019395477663, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7542530896551589155, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: player
@@ -42083,7 +42105,7 @@ PrefabInstance:
       objectReference: {fileID: 2844887999557054792}
     - target: {fileID: 7542872606732734579, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7578178416171753197, guid: 4ef754a40f51269459452686a239f2d7, type: 3}
       propertyPath: m_RootOrder

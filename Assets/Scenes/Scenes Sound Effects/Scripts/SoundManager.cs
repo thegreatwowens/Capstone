@@ -39,6 +39,8 @@ void OnEnable()
     {
 
         currentScene = SceneManager.GetActiveScene();
+              
+
     }
 
     private void OnDisable() {

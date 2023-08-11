@@ -37,6 +37,7 @@ public class PlayerManagerScript : MonoBehaviour
         
         yield return new WaitForSecondsRealtime(.001f);
          SpawnPlayer();
+        
         }
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {

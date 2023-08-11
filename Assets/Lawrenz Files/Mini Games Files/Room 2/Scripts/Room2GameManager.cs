@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine.Events;
 using System.Collections;
+using OwnCode.Choi;
 namespace OwnCode{
     public class Room2GameManager : MonoBehaviour {
 
@@ -33,9 +34,11 @@ namespace OwnCode{
         public UnityEvent Achieved;
 
         int correctAnswers;
-
+        GameObject disablemenu;
         private void Start()
         {
+            
+             
             for (int j = 0; j <= Computers.Count - 1; j++)
             {
                 randomInts.Add(j);
@@ -51,11 +54,14 @@ namespace OwnCode{
         }
         private void Update()
         {
+                disablemenu = GameObject.Find ("<Menu>");
+                    if(disablemenu != null)
+                    disablemenu.SetActive(false);
 
-       
 
             if (startSession)
             {
+                  
                 settime -= Time.deltaTime;
                 timeMinutes = Mathf.FloorToInt(settime / 60);
                 timeSeconds = Mathf.FloorToInt(settime % 60);
@@ -80,6 +86,7 @@ namespace OwnCode{
         {
             IntializedData();
             TimerStart();
+            MouseSettingsInput.Instance.DisableMouseUI();
         }
         IEnumerator ReturntoMap()
         {
